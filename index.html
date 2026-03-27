@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RAL — Real-Time Decision Engine | raldecision.com</title>
-<meta name="description" content="RAL is the world's most integrated decision-making system. Built for ambiguity, incomplete information, and time pressure. Not a framework — a decision engine.">
+<title>RAL, Real-Time Decision Engine | raldecision.com</title>
+<meta name="description" content="RAL is the decision system built for the conditions you actually face: ambiguity, incomplete information, and real pressure. Not a framework. A real-time engine for your decisions.">
 <meta name="keywords" content="RAL, decision engine, real-time decision making, decision under pressure, RAL decision cycle, decision system, Vedant">
 <meta name="author" content="Vedant">
-<meta property="og:title" content="RAL — Real-Time Decision Engine">
+<meta property="og:title" content="RAL, Real-Time Decision Engine">
 <meta property="og:description" content="Stop reacting. Start deciding. RAL is built for ambiguity, pressure, and incomplete information.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://raldecision.com">
@@ -242,8 +242,9 @@ body {
   position: absolute; inset: 0; z-index: 0;
   background:
     url('assets/hero-bg.jpg') center/cover no-repeat,
-    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(0,212,170,0.05) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 40% at 20% 70%, rgba(59,130,246,0.04) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.55) 50%, rgba(0,0,0,0.80) 100%),
+    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(0,212,170,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 20% 70%, rgba(59,130,246,0.03) 0%, transparent 60%),
     linear-gradient(180deg, var(--black) 0%, var(--surface) 100%);
 }
 
@@ -352,7 +353,7 @@ body {
   color: var(--white-muted); letter-spacing: 0.08em; text-transform: uppercase;
 }
 
-/* HERO RIGHT — ENGINE PREVIEW */
+/* HERO RIGHT, ENGINE PREVIEW */
 .hero-right {
   display: flex; justify-content: center; align-items: center;
   position: relative;
@@ -453,7 +454,7 @@ body {
   line-height: 1.2;
 }
 
-/* Connection lines — SVG */
+/* Connection lines, SVG */
 .engine-lines {
   position: absolute; inset: 0;
   pointer-events: none;
@@ -589,7 +590,7 @@ body {
 #s-engine::before {
   content: '';
   position: absolute; inset: 0;
-  background: url('assets/framework-bg.jpg') center/cover no-repeat, radial-gradient(ellipse 60% 60% at 50% 30%, rgba(0,212,170,0.04) 0%, transparent 60%);
+  background: url('assets/gap-texture.jpg') center/cover no-repeat, radial-gradient(ellipse 60% 60% at 50% 30%, rgba(0,212,170,0.04) 0%, transparent 60%);
 }
 
 .engine-inner { max-width: 1280px; margin: 0 auto; position: relative; z-index: 2; }
@@ -737,7 +738,7 @@ body {
 ════════════════════════════════════ */
 #s-cycle {
   padding: 120px 48px;
-  background: url('assets/decision-cycle-bg.jpg') center/cover no-repeat, var(--surface);
+  background: var(--surface);
 }
 
 .cycle-inner { max-width: 1280px; margin: 0 auto; }
@@ -861,7 +862,7 @@ body {
 .flow-step::before {
   content: '';
   position: absolute;
-  left: 109px; top: 64px; bottom: -1px;
+  left: 94px; top: 64px; bottom: -1px;
   width: 1px;
   background: linear-gradient(to bottom, rgba(0,212,170,0.3) 0%, rgba(0,212,170,0.08) 100%);
   z-index: 0;
@@ -1063,7 +1064,7 @@ body {
 ════════════════════════════════════ */
 #s-scenario {
   padding: 120px 48px;
-  background: url('assets/scenario-bg.jpg') center/cover no-repeat, var(--black);
+  background: var(--black);
 }
 
 .scen-inner { max-width: 1280px; margin: 0 auto; }
@@ -1125,7 +1126,7 @@ body {
 }
 .sp-cond::before { content: '⚠'; font-size: 12px; color: var(--amber); flex-shrink: 0; }
 
-.scen-steps-body { padding: 0; }
+.scen-steps-body { padding: 0; padding-left: 24px; padding-right: 24px; }
 
 .scen-step-row {
   display: grid; grid-template-columns: 200px 1fr;
@@ -1506,7 +1507,7 @@ footer {
   #nav { padding: 0 20px; }
   .nav-links { display: none; }
   .nav-ham { display: flex; }
-  #hero, #s-gap, #s-engine, #s-cycle, #s-flow, #s-grids, #s-scenario, #s-apply, #s-about, #s-engage { padding-left: 20px; padding-right: 20px; }
+  #hero, #s-gap, #s-engine, #s-cycle, #s-flow, #s-grids, #s-scenario, #s-apply, #s-about, #s-engage, #s-summary { padding-left: 20px; padding-right: 20px; }
   footer { padding: 24px 20px; }
   .sbar-nodes { display: none; }
   #system-bar { justify-content: flex-start; padding: 0 20px; gap: 12px; }
@@ -1516,7 +1517,8 @@ footer {
   .flow-step::before { display: none; }
   .flow-right { border-left: none; border-top: 1px solid var(--border-2); padding: 20px 0 0; }
   .scen-step-row { grid-template-columns: 1fr; }
-  .ssr-left { border-right: none; border-bottom: 1px solid var(--border-2); }
+  .scen-steps-body { padding-left: 0; padding-right: 0; }
+  .ssr-left { border-right: none; border-bottom: 1px solid var(--border-2); margin-left: 20px; margin-right: 20px; }
   .domain-tabs { overflow-x: auto; }
   .domain-tab { white-space: nowrap; }
   .engage-contacts { flex-direction: column; gap: 20px; }
@@ -1525,6 +1527,113 @@ footer {
   .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
   .engage-btns { flex-direction: column; align-items: center; }
   .about-portrait { aspect-ratio: 1/1; }
+
+  /* ── System Architecture Diagram ─────────────────────────────── */
+  /* Outer wrapper: remove padding so diagram fills screen cleanly */
+  .reveal.r-d3[style*="max-width:800px"] { padding: 16px !important; }
+
+  /* 3-column support layers → single column, centred */
+  [style*="grid-template-columns:1fr 1fr 1fr"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  /* 2-column summary grids → single column on mobile */
+  [style*="grid-template-columns: 1fr 1fr; gap: 32px"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* 6-column cycle nodes → 3×2 grid, centred */
+  [style*="grid-template-columns:repeat(6,1fr)"] {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  /* Outer diagram box: reduce padding */
+  [style*="background:var(--surface-2);border:1px solid var(--border);padding:48px 32px"] {
+    padding: 24px 16px !important;
+  }
+
+  /* Central cycle box */
+  [style*="background:rgba(0,212,170,0.04);border:1px solid rgba(0,212,170,0.2);padding:28px"] {
+    padding: 20px 16px !important;
+  }
+
+  /* Engine principle cards: 3-col → 1-col */
+  [style*="grid-template-columns:repeat(3,1fr)"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+  }
+
+  /* Engine outer wrapper: remove side padding */
+  [style*="max-width:800px;margin:0 auto 72px;padding:40px"] {
+    padding: 16px !important;
+  }
+
+  /* ── Cycle Stages ─────────────────────────────────────────────── */
+  /* Stage row: shrink number column further, allow text to wrap */
+  .stage-row { grid-template-columns: 48px 1fr; }
+  .stage-num-col { padding: 20px 8px; }
+  .stage-num-big { font-size: 20px; }
+  .stage-content-col { padding: 20px 16px; }
+  .stage-title { font-size: 18px; }
+
+  /* Expanded grid already goes 1-col at 768px via existing rule,
+     but ensure it's centred and not overflowing */
+  .stage-expanded { overflow-x: hidden; }
+  .stage-exp-grid { grid-template-columns: 1fr; }
+
+  /* ── Decision flow two-column grid → stack ────────────────────── */
+  [style*="display:grid;grid-template-columns:1fr 2fr;gap:48px"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  /* Unstick the decision-flow image on mobile */
+  [style*="position:sticky;top:96px"] {
+    position: static !important;
+  }
+
+  /* ── Grid visual cols (Awareness / Decision / Culture) ────────── */
+  .grid-block { grid-template-columns: 1fr !important; }
+  .grid-visual-col { min-height: unset; }
+  /* Images inside visual col: constrain height */
+  .grid-visual-col img {
+    height: 180px !important;
+    object-fit: cover;
+  }
+  /* 2×2 quadrant grids: reduce padding so they don't overflow */
+  .grid-2x2 { font-size: 12px; }
+  .g2cell { padding: 12px 10px; }
+  /* Axis labels: hide on small screens to avoid overflow */
+  .g2x2-axis-x, .g2x2-axis-y { display: none; }
+
+  /* ── Domain panels ────────────────────────────────────────────── */
+  .domain-panel { grid-template-columns: 1fr !important; }
+  .dp-visual { display: none; }
+
+  /* ── Cycle header: centre on mobile ──────────────────────────── */
+  .cycle-header { text-align: center; }
+  .cycle-header .section-eyebrow { justify-content: center; }
+}
+@media (max-width: 480px) {
+  /* Very small phones: cycle nodes go 2-col */
+  [style*="grid-template-columns:repeat(6,1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  /* Stage content: even tighter */
+  .stage-content-col { padding: 16px 12px; }
+  .stage-title { font-size: 16px; }
+  .stage-summary { font-size: 14px; }
+  /* Engine diagram: minimal padding */
+  .engine-diagram-wrap { padding: 8px !important; }
+  /* Cycle header text align */
+  .section-h2 { font-size: 28px !important; }
 }
 </style>
 </head>
@@ -1587,17 +1696,17 @@ footer {
     <div class="hero-left">
       <div class="hero-status" style="opacity:0;animation:fup 0.7s ease 0.1s forwards;">
         <div class="hero-status-dot"></div>
-        <span>Decision Engine — Operational</span>
+        <span>Decision Engine, Operational</span>
       </div>
       <h1 class="hero-h1" style="opacity:0;animation:fup 0.8s ease 0.25s forwards;">
         Stop reacting.<br><span class="teal">Start deciding.</span>
       </h1>
       <h2 class="hero-h2" style="opacity:0;animation:fup 0.8s ease 0.4s forwards;">
-        The world's most integrated real-time decision system.
+        The decision system built for the conditions you actually face.
       </h2>
       <div class="hero-rule" style="opacity:0;animation:fup 0.8s ease 0.52s forwards;"></div>
       <p class="hero-body" style="opacity:0;animation:fup 0.8s ease 0.62s forwards;">
-        RAL is not a leadership framework. It is not a model or a methodology. It is a <strong>real-time decision engine</strong> — built specifically for ambiguity, incomplete information, and time pressure. Every other system was designed for stability. RAL was built for the conditions that actually exist.
+        RAL is not a framework, a model, or a methodology. It is a <strong>real-time decision engine</strong>, built specifically for ambiguity, incomplete information, and time pressure. Every other system was designed for stability. RAL was built for the conditions that actually exist.
       </p>
       <div class="hero-btns" style="opacity:0;animation:fup 0.8s ease 0.76s forwards;">
         <button class="btn-primary" onclick="goto('s-engine')">Enter the Engine →</button>
@@ -1629,7 +1738,7 @@ footer {
           <div class="core-title">RAL<br>Engine</div>
         </div>
       </div>
-      <div style="position:absolute;bottom:0;left:0;right:0;height:200px;background:url('assets/hero-people-decision.jpg') center/cover no-repeat;opacity:0.3;z-index:-1;"></div>
+
     </div>
   </div>
 </section>
@@ -1648,29 +1757,29 @@ footer {
       <div>
         <div class="section-eyebrow reveal">Why Existing Models Fail</div>
         <h2 class="section-h2 reveal r-d1">Every framework<br>was built for <em>stability</em>.</h2>
-        <p class="section-body reveal r-d2">OODA, PDCA, Cynefin — these models work when environments hold still. <strong>They were not designed for the conditions you actually face.</strong> When ambiguity increases, when information is incomplete, when time is limited and the cost of getting it wrong is real — existing frameworks break.</p>
-        <p class="section-body reveal r-d3">They either prioritize speed at the expense of depth, or structure at the expense of adaptability. Most critically, none of them address what happens <em>before</em> the decision process begins — the reactive pattern that overrides thinking entirely.</p>
+        <p class="section-body reveal r-d2">OODA, PDCA, Cynefin. These models work when environments hold still. <strong>They were not designed for the conditions you actually face.</strong> When ambiguity increases, when information is incomplete, when time is limited and the cost of getting it wrong is real, existing frameworks break.</p>
+        <p class="section-body reveal r-d3">They either prioritize speed at the expense of depth, or structure at the expense of adaptability. Most critically, none of them address what happens <em>before</em> your decision process begins: the reactive pattern that overrides your thinking entirely.</p>
         <div class="quote-block reveal r-d4">
-          <p>"The gap is not in competence. It is in the absence of a system built for the conditions that actually exist — pressure, ambiguity, and incomplete information as the operating baseline, not the exception."</p>
+          <p>"The gap is not in your competence. It is in the absence of a system built for the conditions you actually face: pressure, ambiguity, and incomplete information as the operating baseline, not the exception."</p>
         </div>
-        <button class="btn-primary reveal r-d5" onclick="goto('s-engage')">Facing a decision like this? Map your next step with Vedant.</button>
+        <button class="btn-primary reveal r-d5" onclick="goto('s-engage')">Facing a decision like this right now? Map your next move with Vedant.</button>
       </div>
       <div class="gap-cards">
         <div class="gap-card reveal r-d1">
           <div class="gap-card-h">OODA Loop: Too Abstract, Fails at Scale</div>
-          <p>Designed for individual combat. Breaks down in team environments, creates analysis paralysis under information overload, and offers no mechanism to interrupt reactive behavior before decision-making begins.</p>
+          <p>Designed for individual combat. In your team environment, it creates analysis paralysis under information overload and offers no mechanism to interrupt your reactive behavior before decision-making begins.</p>
         </div>
         <div class="gap-card reveal r-d2">
           <div class="gap-card-h">PDCA: Assumes Stability That Doesn't Exist</div>
-          <p>Too rigid for volatile environments. Assumes a plan-execute-check cycle that requires stable conditions — precisely the conditions missing in high-pressure decision environments.</p>
+          <p>Too rigid for volatile environments. It assumes a plan-execute-check cycle that requires stable conditions: precisely the conditions missing when your decisions actually matter most.</p>
         </div>
         <div class="gap-card reveal r-d3">
           <div class="gap-card-h">Bounded Rationality: Accepts "Good Enough"</div>
-          <p>Acknowledges constraints but settles for suboptimal decisions. Offers no system for improving decision quality over time — just acceptance of limitation.</p>
+          <p>Acknowledges constraints but settles for suboptimal decisions. It offers no system for improving your decision quality over time, just acceptance of limitation.</p>
         </div>
         <div class="gap-card reveal r-d4">
           <div class="gap-card-h">The Universal Gap: No Integration</div>
-          <p>Every existing model treats internal state, decision logic, and external environment as separate considerations. RAL treats them as one integrated system — because that is how decisions actually work.</p>
+          <p>Every existing model treats your internal state, decision logic, and external environment as separate considerations. RAL treats them as one integrated system, because that is how decisions actually work.</p>
         </div>
       </div>
     </div>
@@ -1683,31 +1792,36 @@ footer {
     <div class="engine-header">
       <div class="section-eyebrow reveal">The RAL Decision Engine</div>
       <h2 class="section-h2 reveal r-d1">One integrated system.<br><em>Not four separate tools.</em></h2>
-      <p class="section-body reveal r-d2">The RAL Decision Cycle sits at the center. The Awareness Grid, Decision Grid, and Culture Lattice are not modules — they are the environment the cycle operates within. Remove any one of them, and the system degrades. Together, they form a complete decision operating system.</p>
+      <p class="section-body reveal r-d2">The RAL Decision Cycle sits at the center of everything you do with this system. The Awareness Grid, Decision Grid, and Culture Lattice are not modules. They are the environment your cycle operates within. Remove any one of them and your decision quality degrades. Together, they form a complete operating system for every decision for every decision you face.</p>
+    </div>
+
+    <!-- system-architecture.png: full-width below engine header -->
+    <div class="reveal r-d3" style="margin:0 auto 48px;max-width:900px;">
+      <img src="assets/system-architecture.png" alt="RAL System Architecture" style="width:100%;display:block;border:1px solid var(--border);opacity:0.9;">
     </div>
 
     <!-- System diagram using CSS layout -->
-    <div class="reveal r-d3" style="max-width:800px;margin:0 auto 72px;padding:40px;">
+    <div class="reveal r-d3 engine-diagram-wrap" style="max-width:800px;margin:0 auto 72px;padding:40px;overflow:hidden;">
       <!-- Simplified diagram using structured layout -->
-      <div style="background:var(--surface-2);border:1px solid var(--border);padding:48px 32px;position:relative;">
+      <div style="background:var(--surface-2);border:1px solid var(--border);padding:48px 32px;position:relative;overflow:hidden;">
         <!-- Support systems row -->
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-bottom:32px;">
           <div style="padding:16px;background:rgba(0,212,170,0.04);border:1px solid rgba(0,212,170,0.15);text-align:center;cursor:pointer;" onclick="goto('s-grids')">
             <div style="font-family:var(--mono);font-size:10px;color:var(--teal);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Support Layer 01</div>
             <div style="font-family:var(--sans);font-size:14px;font-weight:600;color:var(--white);margin-bottom:4px;">Awareness Grid</div>
-            <div style="font-size:12px;color:var(--white-dim);">Internal state — cognitive and emotional clarity</div>
+            <div style="font-size:12px;color:var(--white-dim);">Your internal state: cognitive and emotional clarity</div>
             <div style="font-family:var(--mono);font-size:10px;color:var(--teal);margin-top:8px;">Powers: Pause + Perceive</div>
           </div>
           <div style="padding:16px;background:rgba(59,130,246,0.04);border:1px solid rgba(59,130,246,0.15);text-align:center;cursor:pointer;" onclick="goto('s-grids')">
             <div style="font-family:var(--mono);font-size:10px;color:#3B82F6;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Support Layer 02</div>
             <div style="font-family:var(--sans);font-size:14px;font-weight:600;color:var(--white);margin-bottom:4px;">Decision Grid</div>
-            <div style="font-size:12px;color:var(--white-dim);">Decision logic — trade-offs, risk, prioritization</div>
+            <div style="font-size:12px;color:var(--white-dim);">Your decision logic: trade-offs, risk, prioritization</div>
             <div style="font-family:var(--mono);font-size:10px;color:#3B82F6;margin-top:8px;">Powers: Reframe + Act</div>
           </div>
           <div style="padding:16px;background:rgba(139,92,246,0.04);border:1px solid rgba(139,92,246,0.15);text-align:center;cursor:pointer;" onclick="goto('s-grids')">
             <div style="font-family:var(--mono);font-size:10px;color:#8B5CF6;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Support Layer 03</div>
             <div style="font-family:var(--sans);font-size:14px;font-weight:600;color:var(--white);margin-bottom:4px;">Culture Lattice</div>
-            <div style="font-size:12px;color:var(--white-dim);">External environment — feedback, constraints, pressure</div>
+            <div style="font-size:12px;color:var(--white-dim);">Your external environment: feedback, constraints, pressure</div>
             <div style="font-family:var(--mono);font-size:10px;color:#8B5CF6;margin-top:8px;">Powers: Grow + Adjust</div>
           </div>
         </div>
@@ -1747,7 +1861,7 @@ footer {
               <div style="font-family:var(--sans);font-size:12px;font-weight:600;color:var(--white);margin-top:4px;">Adjust</div>
             </div>
           </div>
-          <div style="text-align:center;margin-top:14px;font-family:var(--mono);font-size:10px;color:var(--teal);opacity:0.6;letter-spacing:0.1em;">↺ CONTINUOUS — NO FIXED ENDPOINT</div>
+          <div style="text-align:center;margin-top:14px;font-family:var(--mono);font-size:10px;color:var(--teal);opacity:0.6;letter-spacing:0.1em;">↺ CONTINUOUS, NO FIXED ENDPOINT</div>
         </div>
       </div>
     </div>
@@ -1756,15 +1870,15 @@ footer {
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1280px;margin:0 auto;">
       <div class="gap-card reveal r-d1" style="padding:28px;">
         <div class="gap-card-h" style="color:var(--teal);font-size:13px;margin-bottom:10px;">Continuous, Not Linear</div>
-        <p>Every other model has an endpoint. RAL has none. Each cycle feeds directly into the next — Adjust becomes the foundation for the next Pause. The system never stops; it refines.</p>
+        <p>Every other model has an endpoint. Yours does not. Each cycle feeds directly into the next: Adjust becomes the foundation for your next Pause. The system never stops; it compounds your decision quality with every iteration.</p>
       </div>
       <div class="gap-card reveal r-d2" style="padding:28px;">
         <div class="gap-card-h" style="color:var(--teal);font-size:13px;margin-bottom:10px;">Integrated, Not Fragmented</div>
-        <p>Internal state, decision logic, and environmental context operate as one system. The Awareness Grid informs Pause. The Decision Grid structures Reframe. The Culture Lattice captures Adjust. Nothing operates in isolation.</p>
+        <p>Your internal state, decision logic, and environmental context operate as one system. The Awareness Grid informs your Pause. The Decision Grid structures your Reframe. The Culture Lattice captures your Adjust. Nothing operates in isolation, and neither do you.</p>
       </div>
       <div class="gap-card reveal r-d3" style="padding:28px;">
         <div class="gap-card-h" style="color:var(--teal);font-size:13px;margin-bottom:10px;">Built for Pressure, Not Stability</div>
-        <p>RAL's design assumption is pressure, ambiguity, and incomplete information — not the exception, but the baseline. Where other systems degrade under these conditions, RAL was specifically engineered for them.</p>
+        <p>RAL's design assumption is the reality you operate in: pressure, ambiguity, and incomplete information. Not the exception, the baseline. Where every other system degrades under those conditions, this one was specifically built for them.</p>
       </div>
     </div>
   </div>
@@ -1776,8 +1890,10 @@ footer {
     <div class="cycle-header">
       <div class="section-eyebrow reveal">The RAL Decision Cycle</div>
       <h2 class="section-h2 reveal r-d1">Six stages.<br><em>One continuous engine.</em></h2>
-      <p class="section-body reveal r-d2">This is not a sequence. It is a real-time loop that runs continuously — during a decision, after a decision, and feeding into the next. Click each stage to see exactly what it means, how to apply it, and what it produces.</p>
+      <p class="section-body reveal r-d2">This is not a checklist you work through. It is a real-time loop running continuously: during your decision, after it, and feeding directly into your next one. Click each stage to see exactly what it means for you, how to apply it in your situation, and what it produces.</p>
     </div>
+
+
 
     <div class="cycle-stages">
 
@@ -1789,30 +1905,30 @@ footer {
         <div class="stage-content-col">
           <div class="stage-header">
             <div>
-              <div class="stage-tag">Interrupt the Reactive Pattern</div>
+              <div class="stage-tag">Stop Your Reactive Pattern</div>
               <div class="stage-title">Pause</div>
             </div>
             <div class="stage-chevron">▼</div>
           </div>
-          <p class="stage-summary">Pause is not passive. It is the most active, high-value step in the entire cycle. It is the deliberate interruption of the automatic reactive response — the moment you choose to decide rather than react. Every other model skips this step entirely. That is why they fail under pressure.</p>
+          <p class="stage-summary">Pause is not passive. It is the most active step in your entire cycle. It is the deliberate interruption of the automatic reactive response, the moment you choose to decide rather than react. Every other model skips this step entirely. That is why they fail under pressure.</p>
           <div class="stage-expanded">
             <div class="stage-exp-grid">
               <div class="stage-exp-block">
                 <div class="seb-label">What It Is</div>
-                <p class="seb-text">A deliberate neurological interruption. <strong>You stop the reactive pattern before it executes.</strong> Not hesitation. Not analysis paralysis. An active choice to create decision space when the pressure to react is highest.</p>
+                <p class="seb-text">A deliberate interruption of your automatic response. <strong>You stop your reactive pattern before it executes.</strong> Not hesitation. Not analysis paralysis. An active choice to create decision space precisely when your pressure to react is highest.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">How to Apply It</div>
-                <p class="seb-text"><strong>Step 1:</strong> Recognize the reactive impulse — the urge to act immediately without thinking. <strong>Step 2:</strong> Name what you are feeling. Naming emotion interrupts the automatic response. <strong>Step 3:</strong> Create a 2-second gap. That gap is the entry point to the cycle.</p>
+                <p class="seb-text"><strong>Step 1:</strong> Recognize your reactive impulse: the urge to act immediately without thinking. <strong>Step 2:</strong> Name what you are feeling. Naming your emotion interrupts the automatic response. <strong>Step 3:</strong> Create a 2-second gap. That gap is your entry point to the cycle.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">What Happens Without It</div>
-                <p class="seb-text">The reactive brain executes automatically. The decision is made before the decision cycle begins. <strong>Most poor decisions under pressure were never actually decisions — they were reactions.</strong></p>
+                <p class="seb-text">Your reactive brain executes automatically. The decision is made before your cycle even begins. <strong>Most poor decisions you have made under pressure were never actually decisions. They were reactions.</strong></p>
               </div>
             </div>
             <div class="stage-scenario">
               <div class="scen-label">In Practice</div>
-              <p class="scen-text">A business leader receives news of a major client cancellation. The reactive impulse: immediately call the team, start problem-solving, send reassurance emails. <strong>Pause says: stop.</strong> Take 2 minutes before any action. This gap — barely 120 seconds — is the difference between a reactive response that escalates the situation and a deliberate response that controls it. The Awareness Grid is checked: are you in a regulated state? If not, the cycle cannot run effectively. Pause is what makes all other stages possible.</p>
+              <p class="scen-text">You receive news of a major client cancellation. Your reactive impulse: call the team, start problem-solving, send reassurance emails. <strong>Pause says: stop.</strong> Take 2 minutes before any action. That gap, barely 120 seconds, is the difference between a reactive response that escalates your situation and a deliberate response that controls it. Your Awareness Grid is checked: are you in a regulated state? If not, the cycle cannot run effectively. Pause is what makes all other stages possible.</p>
             </div>
           </div>
         </div>
@@ -1826,30 +1942,30 @@ footer {
         <div class="stage-content-col">
           <div class="stage-header">
             <div>
-              <div class="stage-tag">Extract Signal from Noise</div>
+              <div class="stage-tag">See What Is Actually There</div>
               <div class="stage-title">Perceive</div>
             </div>
             <div class="stage-chevron">▼</div>
           </div>
-          <p class="stage-summary">Perceive is not observation. Under pressure, the brain filters information through fear, urgency, and prior experience — meaning what you see is not what is actually happening. Perceive is the active extraction of signal from the noise your stressed mind generates.</p>
+          <p class="stage-summary">Perceive is not observation. Under pressure, your brain filters information through fear, urgency, and prior experience, meaning what you see is not what is actually happening. Perceive is the active extraction of signal from the noise your stressed mind generates.</p>
           <div class="stage-expanded">
             <div class="stage-exp-grid">
               <div class="stage-exp-block">
                 <div class="seb-label">What It Is</div>
-                <p class="seb-text">The disciplined separation of <strong>what is confirmed</strong> from what is assumed, feared, or projected. Your brain under pressure creates a story. Perceive interrogates that story before you act on it.</p>
+                <p class="seb-text">The disciplined separation of <strong>what you actually know</strong> from what you are assuming, fearing, or projecting. Your brain under pressure creates a story. Perceive interrogates that story before you act on it.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">How to Apply It</div>
-                <p class="seb-text"><strong>Ask three questions:</strong> What do I know for certain? What am I assuming? What am I missing? Write the answers if possible. The difference between columns one and two is the gap where most bad decisions live.</p>
+                <p class="seb-text"><strong>Ask yourself three questions:</strong> What do I know for certain? What am I assuming? What am I missing? Write the answers if you can. The difference between columns one and two is often the gap where your worst decisions live.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">Common Failure</div>
-                <p class="seb-text">Treating assumption as fact. <strong>The most common decision error</strong> is acting on a story the mind constructed from partial information — not on what is actually present. Perceive prevents this.</p>
+                <p class="seb-text">Treating your assumptions as facts. <strong>The most common decision error</strong> is acting on a story your mind constructed from partial information, not on what is actually in front of you. Perceive prevents this.</p>
               </div>
             </div>
             <div class="stage-scenario">
               <div class="scen-label">In Practice</div>
-              <p class="scen-text">After the client cancellation, Perceive asks: <strong>What do we actually know?</strong> One client has cancelled. What do we assume? That others will follow. That revenue is at risk. That the team is worried. What do we know for certain about those assumptions? Almost nothing. <strong>Perceive separates the confirmed fact (one cancellation) from the noise (catastrophic narrative the mind immediately built around it).</strong> This changes what decision actually needs to be made.</p>
+              <p class="scen-text">After your client cancellation, Perceive asks: <strong>What do you actually know?</strong> One client has cancelled. What are you assuming? That others will follow. That revenue is at risk. That the team is worried. What do we know for certain about those assumptions? Almost nothing. <strong>Perceive separates your confirmed fact, one cancellation, from the noise: the catastrophic narrative your mind immediately built around it.</strong> This changes what decision you actually need to make.</p>
             </div>
           </div>
         </div>
@@ -1863,30 +1979,30 @@ footer {
         <div class="stage-content-col">
           <div class="stage-header">
             <div>
-              <div class="stage-tag">Recalibrate the Decision</div>
+              <div class="stage-tag">Find the Decision You Actually Need to Make</div>
               <div class="stage-title">Reframe</div>
             </div>
             <div class="stage-chevron">▼</div>
           </div>
-          <p class="stage-summary">Reframe is not a perspective shift. It is the recalibration of the decision itself — returning to it with accurate information and asking whether the problem you are solving is the actual problem. Most decisions fail not because of bad execution, but because the wrong problem was being solved.</p>
+          <p class="stage-summary">Reframe is not a perspective shift. It is the recalibration of your decision itself: returning to it with accurate information and asking whether the problem you are solving is the actual problem. Most decisions fail not because of bad execution, but because the wrong problem was being solved.</p>
           <div class="stage-expanded">
             <div class="stage-exp-grid">
               <div class="stage-exp-block">
                 <div class="seb-label">What It Is</div>
-                <p class="seb-text"><strong>Interrogating your definition of the problem.</strong> What you think needs to be decided may not be what actually needs to be decided. Reframe finds the real decision by questioning the framing of the situation.</p>
+                <p class="seb-text"><strong>Interrogating your definition of the problem.</strong> What you think needs to be decided may not be what actually needs to be decided. Reframe finds your real decision by questioning how you framed the situation.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">The Three-Step Formula</div>
-                <p class="seb-text"><strong>1. State the problem as you currently see it.</strong> 2. Identify the assumptions embedded in that framing. 3. Ask: if those assumptions were wrong, what would the real problem be? The answer changes the decision.</p>
+                <p class="seb-text"><strong>1. State the problem as you currently see it.</strong> 2. Identify the assumptions embedded in your framing. 3. Ask: if those assumptions were wrong, what would your real problem be? The answer changes the decision.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">What It Produces</div>
-                <p class="seb-text">A decision that addresses the actual situation rather than the reactive interpretation of it. <strong>Reframe is where Decision Grid logic applies</strong> — trade-offs, risk evaluation, and option structuring become meaningful only after the right problem is defined.</p>
+                <p class="seb-text">A decision that addresses your actual situation rather than your reactive interpretation of it. <strong>Reframe is where your Decision Grid logic applies</strong> : trade-offs, risk evaluation, and option structuring become meaningful only after your right problem is defined.</p>
               </div>
             </div>
             <div class="stage-scenario">
               <div class="scen-label">In Practice</div>
-              <p class="scen-text">Initial framing: "How do we recover this client?" Reframe asks: is that the right problem? After Perceive, the confirmed fact is one cancellation. The real decision may not be client recovery — it may be <strong>risk assessment of other accounts</strong> and a proactive conversation protocol. The decision changes completely. Resources that would have gone into reactive client recovery are now directed into systematic account review — a fundamentally more effective response to the actual situation.</p>
+              <p class="scen-text">Your initial framing: "How do we recover this client?" Reframe asks: is that even the right problem? After Perceive, your confirmed fact is one cancellation. The real decision may not be client recovery, it may be <strong>risk assessment of your other accounts</strong> and a proactive conversation protocol. Your decision changes completely. Resources that would have gone into reactive client recovery are now directed into systematic account review, a fundamentally more effective response to the actual situation.</p>
             </div>
           </div>
         </div>
@@ -1900,30 +2016,30 @@ footer {
         <div class="stage-content-col">
           <div class="stage-header">
             <div>
-              <div class="stage-tag">Intent-Aligned Execution</div>
+              <div class="stage-tag">Execute with a Clear Purpose</div>
               <div class="stage-title">Act</div>
             </div>
             <div class="stage-chevron">▼</div>
           </div>
-          <p class="stage-summary">Act is not just execution. It is intent-aligned execution — action that maintains a direct, visible connection to the strategic objective at every point. The difference between movement and progress is alignment. Act produces progress.</p>
+          <p class="stage-summary">Act is not just execution. It is your intent-aligned execution: action that maintains a direct, visible connection to your strategic objective at every point. The difference between movement and progress is alignment. Act produces progress.</p>
           <div class="stage-expanded">
             <div class="stage-exp-grid">
               <div class="stage-exp-block">
                 <div class="seb-label">What It Is</div>
-                <p class="seb-text"><strong>Decisive execution with full clarity of purpose.</strong> Act is only reached after Pause, Perceive, and Reframe have been completed — which means when action happens, it is grounded, not reactive. This is why RAL decisions hold under scrutiny.</p>
+                <p class="seb-text"><strong>Decisive execution with full clarity of your purpose.</strong> You only reach Act after Pause, Perceive, and Reframe are complete. That means when you act, your action is grounded, not reactive. This is why your decisions hold under scrutiny.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">The Alignment Check</div>
-                <p class="seb-text">Before executing: <strong>State the action. State the objective. Confirm the connection.</strong> If the action does not directly serve the objective, it is a reaction masquerading as a decision. Stop. Return to Reframe.</p>
+                <p class="seb-text">Before you execute: <strong>State your action. State your objective. Confirm the connection between them.</strong> If your action does not directly serve your objective, it is a reaction masquerading as a decision. Stop. Return to Reframe.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">What It Produces</div>
-                <p class="seb-text">Action that achieves. <strong>Not movement — progress.</strong> The Culture Lattice is critical here: the organizational environment must be able to carry and execute the decision without distortion. Act without a healthy Lattice produces misaligned execution.</p>
+                <p class="seb-text">Action that achieves what you set out to achieve. <strong>Not movement. Progress.</strong> Your Culture Lattice is critical here. Your organizational environment must be able to carry and execute your decision without distortion. A reactive culture will filter your intent before it reaches execution. Act without a healthy Lattice produces misaligned execution.</p>
               </div>
             </div>
             <div class="stage-scenario">
               <div class="scen-label">In Practice</div>
-              <p class="scen-text">The reframed decision: proactive account review, not reactive client recovery. Act executes this: <strong>account manager briefings within 24 hours, structured client conversations within 72 hours, review protocol documented within one week.</strong> Each action has a direct connection to the objective — stabilize the account base, not just respond to one cancellation. The Culture Lattice check: is the team operating in a Reflective state that can carry this calmly, or Reactive? If Reactive, Act is paused until the Lattice is addressed.</p>
+              <p class="scen-text">Your reframed decision: proactive account review, not reactive client recovery. Act executes this: <strong>account manager briefings within 24 hours, structured client conversations within 72 hours, review protocol documented within one week.</strong> Each of your actions has a direct connection to your objective: stabilize the account base, not just respond to one cancellation. The Culture Lattice check: is the team operating in a Reflective state that can carry this calmly, or Reactive? If Reactive, Act is paused until the Lattice is addressed.</p>
             </div>
           </div>
         </div>
@@ -1937,30 +2053,30 @@ footer {
         <div class="stage-content-col">
           <div class="stage-header">
             <div>
-              <div class="stage-tag">Capture Outcome Intelligence</div>
+              <div class="stage-tag">Capture What Your Decision Actually Produced</div>
               <div class="stage-title">Grow</div>
             </div>
             <div class="stage-chevron">▼</div>
           </div>
-          <p class="stage-summary">Grow is the intelligence layer. Most decision systems end at execution. RAL captures what happened, why, and what it means for the next decision. This is how RAL improves over time — not through repetition, but through structured learning embedded in every cycle.</p>
+          <p class="stage-summary">Grow is your intelligence layer. Most decision systems end at execution. RAL captures what your decision actually produced, why it happened that way, and what it means for the next decision you face. This is how RAL improves over time, not through repetition, but through structured learning embedded in every cycle.</p>
           <div class="stage-expanded">
             <div class="stage-exp-grid">
               <div class="stage-exp-block">
                 <div class="seb-label">What It Is</div>
-                <p class="seb-text"><strong>Systematic extraction of intelligence from every decision outcome.</strong> Not a retrospective or debrief — a real-time capture of what the decision produced, what it revealed, and what changes as a result of that knowledge.</p>
+                <p class="seb-text"><strong>Systematic extraction of intelligence from every decision you make.</strong> Not a retrospective. A real-time capture of what your decision produced, what it revealed, and what changes as a result of that knowledge.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">The Grow Formula</div>
-                <p class="seb-text"><strong>Three questions:</strong> What did the decision actually produce (not what was planned)? What did it reveal that we did not know before? What does this change about how we approach the next decision? Three answers. Three inputs to Adjust.</p>
+                <p class="seb-text"><strong>Three questions you ask after every decision:</strong> What did my decision actually produce, not what I planned? What did it reveal that I did not know before? What does this change about how I approach my next decision? Three answers. Three inputs to Adjust.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">What It Produces</div>
-                <p class="seb-text">Compounding decision quality. <strong>Each cycle makes the next cycle more precise.</strong> Organizations that skip Grow are decision systems that never improve — they repeat the same quality of decision indefinitely.</p>
+                <p class="seb-text">Your decision quality, compounding. <strong>Each cycle makes your next cycle more precise.</strong> If you skip Grow, you repeat the same quality of decision indefinitely. Every cycle stays flat. With Grow, each one builds on the last.</p>
               </div>
             </div>
             <div class="stage-scenario">
               <div class="scen-label">In Practice</div>
-              <p class="scen-text">After the account review protocol was executed: <strong>What did it produce?</strong> Three at-risk accounts identified. Two responded positively to proactive outreach. One required escalation. <strong>What did it reveal?</strong> The team had not been doing structured account health checks — the cancellation was a symptom, not an isolated event. <strong>What does this change?</strong> Account health review becomes a quarterly system, not a reactive measure. This is the intelligence Grow captures — and it feeds directly into Adjust.</p>
+              <p class="scen-text">After your account review protocol was executed: <strong>What did it produce?</strong> Three at-risk accounts identified. Two responded positively to proactive outreach. One required escalation. <strong>What did it reveal?</strong> Your team had not been doing structured account health checks. The cancellation was a symptom, not an isolated event. <strong>What does this change?</strong> Account health review becomes a quarterly system, not a reactive measure. That is the intelligence Grow captures for you, and it feeds directly into your Adjust.</p>
             </div>
           </div>
         </div>
@@ -1974,30 +2090,30 @@ footer {
         <div class="stage-content-col">
           <div class="stage-header">
             <div>
-              <div class="stage-tag">Feed Intelligence Back into the System</div>
+              <div class="stage-tag">Build Your Next Decision from This One</div>
               <div class="stage-title">Adjust</div>
             </div>
             <div class="stage-chevron">▼</div>
           </div>
-          <p class="stage-summary">Adjust closes the loop — and immediately opens the next one. It is not a correction. It is the integration of outcome intelligence into the operating system so that the next cycle begins from a higher baseline. Adjust is what makes RAL a learning system, not just a decision process.</p>
+          <p class="stage-summary">Adjust closes your loop and immediately opens the next one. It is not a correction. It is the integration of what you learned intelligence into the operating system so that the next cycle begins from a higher baseline. Adjust is what makes RAL a learning system, not just a decision process.</p>
           <div class="stage-expanded">
             <div class="stage-exp-grid">
               <div class="stage-exp-block">
                 <div class="seb-label">What It Is</div>
-                <p class="seb-text"><strong>Systemic calibration based on outcome intelligence.</strong> Adjust does not just fix what went wrong — it integrates what was learned into the system's baseline assumptions, protocols, and approaches. The next Pause begins from a better starting position.</p>
+                <p class="seb-text"><strong>Systemic calibration based on what you just learned.</strong> Adjust does not just fix what went wrong. It integrates what you learned into your baseline assumptions, protocols, and approaches. Your next Pause begins from a better starting position.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">How to Apply It</div>
-                <p class="seb-text"><strong>Take the three Grow outputs</strong> and convert each one into a specific, actionable change to how the system operates. Not a lesson learned — a system change. If the lesson is not embedded in the system, it will not be used in the next cycle.</p>
+                <p class="seb-text"><strong>Take your three Grow outputs</strong> and convert each one into a specific, actionable change to how your system operates. Not a lesson learned. A structural change to how you make the next decision. If the lesson is not embedded in the system, it will not be used in the next cycle.</p>
               </div>
               <div class="stage-exp-block">
                 <div class="seb-label">The Loop Connection</div>
-                <p class="seb-text">Adjust feeds directly into the next Pause. <strong>The next time a situation emerges, the Awareness Grid is more calibrated, the Decision Grid is updated, the Culture Lattice reflects the learning.</strong> This is how RAL compounds in quality over every cycle.</p>
+                <p class="seb-text">Your Adjust feeds directly into your next Pause. <strong>The next time a situation emerges, your Awareness Grid is more calibrated, your Decision Grid is updated, your Culture Lattice reflects the learning.</strong> This is how your decision quality compounds over every cycle.</p>
               </div>
             </div>
             <div class="stage-scenario">
               <div class="scen-label">In Practice</div>
-              <p class="scen-text">Grow revealed: the cancellation was a symptom of absent account health monitoring. <strong>Adjust implements: quarterly account health review protocol, documented and assigned.</strong> This is embedded in the system — not a suggestion, a structural change. The next time a client relationship risk emerges, <strong>the system catches it at Perceive rather than at cancellation.</strong> The cycle did not just solve the problem — it restructured the system to prevent the next version of the same problem. That is what Adjust produces.</p>
+              <p class="scen-text">Your Grow revealed: the cancellation was a symptom of absent account health monitoring. <strong>Your Adjust implements: quarterly account health review protocol, documented and assigned.</strong> This is embedded in your system: not a suggestion, a structural change. The next time a client relationship risk emerges, <strong>your system catches it at Perceive rather than at cancellation.</strong> Your cycle did not just solve the problem. It restructured your system to prevent the next version of the same problem. That is what Adjust produces.</p>
             </div>
           </div>
         </div>
@@ -2013,21 +2129,22 @@ footer {
     <div class="flow-header">
       <div class="section-eyebrow reveal">Decision Breakdown</div>
       <h2 class="section-h2 reveal r-d1">How the system<br><em>moves in real time.</em></h2>
-      <p class="section-body reveal r-d2">This is not a diagram. This is the operational flow — what actually happens inside a decision when RAL is running. Follow it from trigger to outcome and see exactly where other systems break and where RAL holds.</p>
+      <p class="section-body reveal r-d2">This is not a diagram. This is the operational flow of your decision as RAL runs it. Follow it from the moment your trigger arrives to the outcome, and see exactly where other systems break and where yours holds.</p>
     </div>
 
-    <div class="flow-visual">
+    <div style="display:flex;flex-direction:column;align-items:center;margin-bottom:48px;">
+    <div class="flow-visual" style="margin-top:0;max-width:900px;width:100%;">
       <div class="flow-step reveal">
         <div class="flow-left">
           <div class="flow-badge"><div class="fb-num">T</div><div class="fb-word">Trigger</div></div>
           <div class="flow-stage-tag">Situation Emerges</div>
         </div>
         <div class="flow-right">
-          <div class="flow-right-h">A situation demands a decision.</div>
-          <p class="flow-right-p">Something has happened. Information is arriving — incomplete, urgent, and pressure-loaded. The reactive brain is already constructing a response. <strong>Without RAL, that response executes automatically.</strong> With RAL, the system activates at this exact moment.</p>
+          <div class="flow-right-h">A situation demands your decision.</div>
+          <p class="flow-right-p">Something has happened. Information is arriving: incomplete, urgent, and pressure-loaded. Your reactive brain is already constructing a response. <strong>Without RAL, that response executes before you choose it.</strong> With RAL, your system activates at this exact moment.</p>
           <div class="flow-apply">
             <div class="fa-label">What Happens Here Without RAL</div>
-            <p class="fa-text">Reaction. The automatic response — shaped by stress, prior experience, and urgency — executes before deliberate thinking begins. <strong>This is where most poor decisions are made.</strong></p>
+            <p class="fa-text">Reaction. Your automatic response, shaped by stress, prior experience, and urgency, executes before deliberate thinking begins. <strong>This is where most of your poor decisions get made.</strong></p>
           </div>
         </div>
       </div>
@@ -2039,10 +2156,10 @@ footer {
         </div>
         <div class="flow-right">
           <div class="flow-right-h">The reactive pattern is stopped.</div>
-          <p class="flow-right-p">The Awareness Grid activates: <strong>What cognitive-emotional state is the decision-maker operating from?</strong> If Reactive-Rigid or Reactive-Flexible, Pause extends until the state moves toward Reflective-Adaptive. The cycle cannot run effectively from a reactive state.</p>
+          <p class="flow-right-p">Your Awareness Grid activates: <strong>What cognitive-emotional state are you operating from right now?</strong> If you are Reactive-Rigid or Reactive-Flexible, Pause extends until your state moves toward Reflective-Adaptive. Your cycle cannot run effectively from a reactive state.</p>
           <div class="flow-apply">
             <div class="fa-label">System Check</div>
-            <p class="fa-text"><strong>Awareness Grid:</strong> Am I Reflective-Adaptive? <strong>If yes:</strong> proceed to Perceive. <strong>If no:</strong> the most important decision right now is to regulate state before making any other decision. Name the emotion. Breathe. Two minutes.</p>
+            <p class="fa-text"><strong>Awareness Grid:</strong> Am I Reflective-Adaptive? <strong>If yes:</strong> proceed to your Perceive. <strong>If no:</strong> the most important decision right now is to regulate your state before making any other decision. Name what you are feeling. Breathe. Two minutes.</p>
           </div>
         </div>
       </div>
@@ -2053,8 +2170,8 @@ footer {
           <div class="flow-stage-tag">Signal Extracted</div>
         </div>
         <div class="flow-right">
-          <div class="flow-right-h">What is actually happening — separated from what the stressed mind is projecting.</div>
-          <p class="flow-right-p"><strong>Confirmed facts only.</strong> Every assumption, projection, and fear is explicitly named and set aside. The Decision Grid activates here: what are the actual conditions the decision must operate within?</p>
+          <div class="flow-right-h">What is actually happening, separated from what your stressed mind is projecting.</div>
+          <p class="flow-right-p"><strong>Confirmed facts only.</strong> Every assumption, projection, and fear is explicitly named and set aside. Your Decision Grid activates here: what are the actual conditions your decision must operate within?</p>
           <div class="flow-apply">
             <div class="fa-label">System Check</div>
             <p class="fa-text"><strong>Three columns:</strong> What do I know for certain? What am I assuming? What am I missing? The decision operates only on column one until columns two and three are resolved or explicitly accounted for.</p>
@@ -2068,11 +2185,11 @@ footer {
           <div class="flow-stage-tag">Decision Recalibrated</div>
         </div>
         <div class="flow-right">
-          <div class="flow-right-h">The actual problem is identified — which may not be what appeared to need deciding.</div>
-          <p class="flow-right-p">With accurate signal extracted, the problem definition is interrogated. <strong>The Decision Grid structures the options: trade-offs, risks, constraints.</strong> The question is no longer "how do we respond?" but "what decision actually needs to be made?"</p>
+          <div class="flow-right-h">Your actual problem is identified. It may not be what appeared to need deciding.</div>
+          <p class="flow-right-p">With accurate signal extracted, your problem definition is interrogated. <strong>Your Decision Grid structures your options: trade-offs, risks, constraints.</strong> The question is no longer "how do I respond?" It becomes "what decision do I actually need to make?"</p>
           <div class="flow-apply">
             <div class="fa-label">System Check</div>
-            <p class="fa-text"><strong>State the decision as currently framed. Identify embedded assumptions. Ask: if those assumptions were wrong, what would the real decision be?</strong> Proceed with the recalibrated decision.</p>
+            <p class="fa-text"><strong>State your decision as currently framed. Identify your embedded assumptions. Ask: if those assumptions were wrong, what would your real decision be?</strong> Proceed with your recalibrated decision.</p>
           </div>
         </div>
       </div>
@@ -2083,11 +2200,11 @@ footer {
           <div class="flow-stage-tag">Intent-Aligned</div>
         </div>
         <div class="flow-right">
-          <div class="flow-right-h">Decisive execution — connected directly to the strategic objective.</div>
-          <p class="flow-right-p"><strong>The Culture Lattice determines execution quality.</strong> A Reactive culture distorts action — decisions get filtered through organizational fear, cognitive gaps, and behavioral rigidity. A Reflective culture carries the decision cleanly into execution.</p>
+          <div class="flow-right-h">Decisive execution, connected directly to your strategic objective.</div>
+          <p class="flow-right-p"><strong>Your Culture Lattice determines your execution quality.</strong> A reactive culture distorts your action, decisions get filtered through organizational fear, cognitive gaps, and behavioral rigidity. A Reflective culture carries your decision cleanly into execution.</p>
           <div class="flow-apply">
             <div class="fa-label">System Check</div>
-            <p class="fa-text"><strong>Action → Objective connection confirmed.</strong> Culture Lattice check: is the organizational environment Reflective enough to execute this decision without distortion? If not — address the Lattice before executing.</p>
+            <p class="fa-text"><strong>Your action to objective connection confirmed.</strong> Culture Lattice check: is your organizational environment Reflective enough to execute your decision without distortion? If not, address the Lattice before you execute.</p>
           </div>
         </div>
       </div>
@@ -2098,11 +2215,11 @@ footer {
           <div class="flow-stage-tag">Intelligence Captured</div>
         </div>
         <div class="flow-right">
-          <div class="flow-right-h">The outcome is examined — not for blame, but for intelligence.</div>
-          <p class="flow-right-p">Three structured questions extract the learning. <strong>This is the step that converts experience into system improvement.</strong> Without Grow, every decision cycle produces the same quality of decision indefinitely. With Grow, each cycle produces a higher baseline.</p>
+          <div class="flow-right-h">Your outcome is examined, not for blame, but for intelligence.</div>
+          <p class="flow-right-p">Three structured questions extract your learning. <strong>This is the step that converts your experience into system improvement.</strong> Without Grow, every one of your decision cycles produces the same quality indefinitely. With Grow, each cycle produces a higher baseline for you.</p>
           <div class="flow-apply">
             <div class="fa-label">System Check</div>
-            <p class="fa-text"><strong>What did it produce? What did it reveal? What does this change?</strong> Three answers. All three fed directly into Adjust.</p>
+            <p class="fa-text"><strong>What did it produce? What did it reveal? What does this change for you?</strong> Three answers. All three feed directly into your Adjust.</p>
           </div>
         </div>
       </div>
@@ -2113,19 +2230,20 @@ footer {
           <div class="flow-stage-tag">System Updated</div>
         </div>
         <div class="flow-right">
-          <div class="flow-right-h">The intelligence becomes a system change — and the next cycle begins from a higher baseline.</div>
-          <p class="flow-right-p"><strong>This is not a lesson learned. It is a structural update to the system.</strong> The Awareness Grid is updated with new calibration. The Decision Grid incorporates the new intelligence. The Culture Lattice reflects the behavioral learning. The next Pause begins with a better system.</p>
+          <div class="flow-right-h">The intelligence becomes a system change, and your next cycle begins from a higher baseline.</div>
+          <p class="flow-right-p"><strong>This is not a lesson learned. It is a structural update to your system.</strong> Your Awareness Grid is updated with new calibration. Your Decision Grid incorporates the new intelligence. Your Culture Lattice reflects the behavioral learning. Your next Pause begins with a better system.</p>
           <div class="flow-apply">
             <div class="fa-label">The Loop Closes and Reopens</div>
-            <p class="fa-text">Adjust completes the current cycle and immediately initializes the next. <strong>RAL has no endpoint.</strong> The system continues — each cycle more precise, more calibrated, and more effective than the last.</p>
+            <p class="fa-text">Adjust completes your current cycle and immediately initializes your next. <strong>Your system has no endpoint.</strong> It continues: each cycle more precise, more calibrated, and more effective than the last.</p>
           </div>
         </div>
       </div>
 
     </div>
+    </div>
     <div style="margin-top:48px;text-align:center;">
       <div class="quote-block" style="background:rgba(0,212,170,0.04);border-left-color:var(--teal);">
-        <p style="color:var(--white);">“If your decision engine is reading this and you can already see the gap, the best move is to make this process operational with expert guidance — not later, now.”</p>
+        <p style="color:var(--white);">“If you are reading this and you can already see the gap in how you are currently deciding, the best move is to make this process operational with expert guidance. Not later. Now.”</p>
       </div>
       <button class="btn-primary" style="margin-top:20px;" onclick="goto('s-engage')">Apply this to your organization with expert guidance →</button>
     </div>
@@ -2137,7 +2255,7 @@ footer {
   <div class="grids-inner">
     <div class="grids-header">
       <div class="section-eyebrow reveal">The Three Support Systems</div>
-      <h2 class="section-h2 reveal r-d1">The systems that<br><em>power the cycle.</em></h2>
+      <h2 class="section-h2 reveal r-d1">The systems that<br><em>power your cycle.</em></h2>
       <p class="section-body reveal r-d2">The Awareness Grid, Decision Grid, and Culture Lattice are not add-ons. They are the environment within which the decision cycle operates. Understanding them is understanding how to make the cycle more effective in real conditions.</p>
     </div>
 
@@ -2146,27 +2264,27 @@ footer {
       <!-- AWARENESS GRID -->
       <div class="grid-block reveal">
         <div class="grid-text-col">
-          <div class="grid-tag">Support System 01 — Powers: Pause + Perceive</div>
+          <div class="grid-tag">Support System 01, Powers: Pause + Perceive</div>
           <h3 class="grid-title">Reflective-Adaptive Awareness Grid</h3>
-          <p class="grid-body">Before a decision can be made effectively, <strong>the state from which it is being made must be identified.</strong> The Awareness Grid maps two axes: Cognitive State (Regulated to Flexible) and Emotional State (Contained to Activated). The intersection determines the decision-making zone you are currently operating from.</p>
-          <p class="grid-body">State is not fixed. It shifts under pressure, changes with new information, and responds to deliberate regulation. <strong>The goal is not to eliminate emotional or cognitive activation — it is to be Reflective-Adaptive: high awareness with maintained flexibility.</strong></p>
+          <p class="grid-body">Before you can make a decision effectively, <strong>the state you are making it from must be identified.</strong> The Awareness Grid maps two axes: your Cognitive State (Regulated to Flexible) and your Emotional State (Contained to Activated). The intersection determines the decision-making zone you are currently operating from.</p>
+          <p class="grid-body">Your state is not fixed. It shifts under pressure, changes with new information, and responds to deliberate regulation. <strong>The goal is not to eliminate your emotional or cognitive activation. It is to be Reflective-Adaptive: high awareness with maintained flexibility.</strong></p>
           <div class="grid-connects">
-            <div class="gc-item">Directly supports Pause — the starting state determines whether Pause is possible at all</div>
-            <div class="gc-item">Supports Perceive — a reactive state filters information through fear and assumption, not reality</div>
-            <div class="gc-item">Updated by Adjust — each cycle refines the baseline awareness calibration</div>
+            <div class="gc-item">Directly supports your Pause: your starting state determines whether Pause is even possible</div>
+            <div class="gc-item">Supports your Perceive: a reactive state filters your information through fear and assumption, not reality</div>
+            <div class="gc-item">Updated by your Adjust: each cycle refines your baseline awareness calibration</div>
           </div>
           <div class="quote-block dark" style="background:rgba(0,212,170,0.03);border-left-color:var(--teal);">
-            <p style="color:var(--white-dim);">State-dependent performance. The quality of your decision is constrained by the state from which you make it. Improve the state, and you improve every decision that follows.</p>
+            <p style="color:var(--white-dim);">Your decision quality is constrained by the state you make it from. Think of it like threading a needle while your hand is shaking. The task is the same. The state changes everything. Improve your state, and you improve every decision that follows.</p>
           </div>
         </div>
-        <div class="grid-visual-col" style="background: url('assets/domain-strategic-bg.jpg') center/cover no-repeat;">
+        <div class="grid-visual-col">
           <div style="position:relative;padding-bottom:48px;padding-left:48px;">
             <div class="grid-2x2">
-              <div class="g2x2-axis-x">Cognitive State — Regulated → Flexible</div>
+              <div class="g2x2-axis-x">Cognitive State, Regulated → Flexible</div>
               <div class="g2x2-axis-y">Emotional State ↑</div>
               <div class="g2cell">
                 <div class="g2cell-title">Reflective Rigid</div>
-                <p>Structured thinking, constrained adaptability. Useful for stability — risks over-control and slow recalibration under pressure.</p>
+                <p>Structured thinking, constrained adaptability. Useful for stability, risks over-control and slow recalibration under pressure.</p>
               </div>
               <div class="g2cell target">
                 <div class="g2cell-title">Reflective-Adaptive</div>
@@ -2174,11 +2292,11 @@ footer {
               </div>
               <div class="g2cell">
                 <div class="g2cell-title">Reactive Rigid</div>
-                <p>Defensive, closed. Low awareness + low flexibility. Decision breakdown zone — leads to misinterpretation and poor outcomes.</p>
+                <p>Defensive, closed. Low awareness + low flexibility. Decision breakdown zone, leads to misinterpretation and poor outcomes.</p>
               </div>
               <div class="g2cell">
                 <div class="g2cell-title">Reactive Flexible</div>
-                <p>High activity, low coherence. Fast reactions without alignment — creates noise, drift, and inconsistency.</p>
+                <p>High activity, low coherence. Fast reactions without alignment, creates noise, drift, and inconsistency.</p>
               </div>
             </div>
           </div>
@@ -2188,20 +2306,20 @@ footer {
       <!-- DECISION GRID -->
       <div class="grid-block reverse reveal">
         <div class="grid-text-col">
-          <div class="grid-tag">Support System 02 — Powers: Reframe + Act</div>
+          <div class="grid-tag">Support System 02, Powers: Reframe + Act</div>
           <h3 class="grid-title">Adaptive Decision Grid</h3>
-          <p class="grid-body">Decision quality is determined by the alignment between <strong>Inner Clarity</strong> (intent, judgment, and cognitive alignment) and <strong>Outer Clarity</strong> (situational visibility, information, and environmental feedback). Most decision failures occur when one is high and the other is not.</p>
-          <p class="grid-body">The Decision Grid maps this relationship and identifies what type of decision is actually being made — not what type appears to need making. <strong>Most leaders are solving the wrong problem. The Decision Grid reveals the correct one.</strong></p>
+          <p class="grid-body">Your decision quality is determined by the alignment between <strong>Inner Clarity</strong> (your intent, judgment, and cognitive alignment) and <strong>Outer Clarity</strong> (your situational visibility, information, and environmental feedback). Most decision failures occur when one is high and the other is not.</p>
+          <p class="grid-body">The Decision Grid maps this relationship and identifies what type of decision you are actually making, not what type appears to need making. <strong>Most leaders are solving the wrong problem at the right time. The Decision Grid reveals the correct one for your situation.</strong></p>
           <div class="grid-connects">
-            <div class="gc-item">Directly supports Reframe — maps the decision type before recalibration begins</div>
-            <div class="gc-item">Supports Act — ensures execution is aligned with actual conditions, not assumed ones</div>
-            <div class="gc-item">Updated by Grow — outcome intelligence adjusts future decision grid calibration</div>
+            <div class="gc-item">Directly supports your Reframe: maps your decision type before recalibration begins</div>
+            <div class="gc-item">Supports your Act: ensures your execution is aligned with actual conditions, not assumed ones</div>
+            <div class="gc-item">Updated by your Grow: outcome intelligence adjusts your future Decision Grid calibration</div>
           </div>
         </div>
-        <div class="grid-visual-col" style="background: url('assets/domain-opportunity-bg.jpg') center/cover no-repeat;">
+        <div class="grid-visual-col">
           <div style="position:relative;padding-bottom:48px;padding-left:48px;">
             <div class="grid-2x2">
-              <div class="g2x2-axis-x">Outer Clarity — Low → High</div>
+              <div class="g2x2-axis-x">Outer Clarity, Low → High</div>
               <div class="g2x2-axis-y">Inner Clarity ↑</div>
               <div class="g2cell">
                 <div class="g2cell-title">Reflective Delay</div>
@@ -2209,7 +2327,7 @@ footer {
               </div>
               <div class="g2cell target">
                 <div class="g2cell-title">Aligned Action</div>
-                <p>High inner + high outer clarity. Target state. Clear intent matched with clear situational awareness — decisive, coherent, effective action.</p>
+                <p>High inner + high outer clarity. Target state. Clear intent matched with clear situational awareness, decisive, coherent, effective action.</p>
               </div>
               <div class="g2cell">
                 <div class="g2cell-title">Emotional Bias</div>
@@ -2217,7 +2335,7 @@ footer {
               </div>
               <div class="g2cell">
                 <div class="g2cell-title">Instinctive Chaos</div>
-                <p>Low inner clarity, high outer clarity. High data exposure, low internal coherence. Reacts quickly but without alignment — fragmented output.</p>
+                <p>Low inner clarity, high outer clarity. High data exposure, low internal coherence. Reacts quickly but without alignment, fragmented output.</p>
               </div>
             </div>
           </div>
@@ -2227,20 +2345,20 @@ footer {
       <!-- CULTURE LATTICE -->
       <div class="grid-block reveal">
         <div class="grid-text-col">
-          <div class="grid-tag">Support System 03 — Powers: Grow + Adjust</div>
+          <div class="grid-tag">Support System 03, Powers: Grow + Adjust</div>
           <h3 class="grid-title">Adaptive Culture Lattice</h3>
-          <p class="grid-body">A leader can have perfect awareness, perfect decision clarity, and a flawless execution cycle — and still fail if the organizational environment is reactive. <strong>The Culture Lattice is the layer most often invisible and most often decisive.</strong></p>
-          <p class="grid-body">Three layers — Emotional, Cognitive, Behavioural — each operating in either a Reflective or Reactive state. The lattice determines whether decision quality can propagate through the system or whether it gets absorbed, distorted, and neutralized.</p>
+          <p class="grid-body">You can have perfect awareness, perfect decision clarity, and a flawless execution cycle, and still fail if the organizational environment is reactive. <strong>The Culture Lattice is the layer you are most likely to overlook, and the one most likely to determine your outcome.</strong></p>
+          <p class="grid-body">Three layers, Emotional, Cognitive, and Behavioural, each operating in either a Reflective or Reactive state. The lattice determines whether your decision quality can propagate through the system or whether it gets absorbed, distorted, and neutralized.</p>
           <div class="grid-connects">
-            <div class="gc-item">Directly supports Grow — a Reactive culture prevents honest outcome capture</div>
-            <div class="gc-item">Supports Adjust — systemic changes require a Reflective environment to take hold</div>
-            <div class="gc-item">Affects every cycle stage — a reactive lattice degrades each step of the decision process</div>
+            <div class="gc-item">Directly supports your Grow: a reactive culture prevents honest outcome capture</div>
+            <div class="gc-item">Supports your Adjust: systemic changes require a Reflective environment to take hold</div>
+            <div class="gc-item">Affects every stage of your cycle: a reactive lattice degrades each step of your decision process</div>
           </div>
           <div class="quote-block dark" style="background:rgba(0,212,170,0.03);border-left-color:var(--teal);">
-            <p style="color:var(--white-dim);">Culture is not abstract. It is the infrastructure through which every decision either reaches full execution — or gets absorbed and neutralized before it can produce any outcome at all.</p>
+            <p style="color:var(--white-dim);">Culture is not abstract. It is the infrastructure through which your decisions either reach full execution or get absorbed and neutralized before they can produce any outcome at all.</p>
           </div>
         </div>
-        <div class="grid-visual-col" style="background: url('assets/domain-collaboration-bg.jpg') center/cover no-repeat;">
+        <div class="grid-visual-col">
           <table class="lattice-table">
             <thead class="lt-head">
               <tr>
@@ -2252,18 +2370,18 @@ footer {
             <tbody>
               <tr class="lt-row">
                 <td class="layer-name">Emotional</td>
-                <td class="ref-state">Psychologically safe — open signal flow, trust, candor. Critical information travels upward freely.</td>
-                <td class="rea-state">Breeds silence — suppression, fear, information stops. The system becomes strategically blind.</td>
+                <td class="ref-state">Psychologically safe: open signal flow, trust, candor. Critical information travels upward freely to you.</td>
+                <td class="rea-state">Breeds silence: suppression, fear, information stops. Your system becomes strategically blind.</td>
               </tr>
               <tr class="lt-row">
                 <td class="layer-name">Cognitive</td>
-                <td class="ref-state">Common understanding — aligned mental models, shared clarity. Everyone operates from the same picture.</td>
-                <td class="rea-state">Interpretation gap — fragmented understanding, divergent action. Same event, different meanings.</td>
+                <td class="ref-state">Common understanding: aligned mental models, shared clarity. Everyone on your team operates from the same picture.</td>
+                <td class="rea-state">Interpretation gap: fragmented understanding, divergent action. Same event, completely different meanings across your organization.</td>
               </tr>
               <tr class="lt-row">
                 <td class="layer-name">Behavioural</td>
-                <td class="ref-state">Responds to change — adaptive, learning-oriented execution. The organization adjusts to what is actually needed.</td>
-                <td class="rea-state">Clings to habit — rigid, outdated responses despite changing conditions. Confidence without accuracy.</td>
+                <td class="ref-state">Responds to change: adaptive, learning-oriented execution. Your organization adjusts to what is actually needed.</td>
+                <td class="rea-state">Clings to habit: rigid, outdated responses despite changing conditions. Your team operates with confidence but without accuracy.</td>
               </tr>
             </tbody>
           </table>
@@ -2279,25 +2397,25 @@ footer {
   <div class="scen-inner">
     <div class="scen-header">
       <div class="section-eyebrow reveal">RAL in Practice</div>
-      <h2 class="section-h2 reveal r-d1">The system running<br><em>under real pressure.</em></h2>
-      <p class="section-body reveal r-d2">This is not a theoretical walk-through. It is a complete decision scenario — a business under sudden revenue pressure — showing exactly how RAL transforms what would have been a reactive response into a structured, effective decision that produces measurable outcomes.</p>
+      <h2 class="section-h2 reveal r-d1">The system running<br><em>through a real decision.</em></h2>
+      <p class="section-body reveal r-d2">This is not a theoretical walk-through. It is a complete decision scenario showing every stage of RAL in sequence. Follow it and map your own decisions onto the same structure, because the conditions are identical to what you face. It shows exactly how RAL transforms what would have been a reactive response into a structured, effective decision that produces measurable outcomes.</p>
     </div>
 
     <div class="scenario-full reveal r-d3">
       <div class="scen-top">
         <div class="scen-context">
-          <div class="scen-env-badge">⬡ Business — Revenue Pressure</div>
+          <div class="scen-env-badge">⬡ Business, Revenue Pressure</div>
           <div class="scen-title">Major Client Cancellation Under Time Pressure</div>
-          <p class="scen-setup">A B2B technology company's largest client — representing 28% of annual revenue — cancels their contract with 30 days notice. The CEO receives the call at 9am. The board expects a response by end of day. The team is already aware. The pressure to act immediately is intense.</p>
+          <p class="scen-setup">A B2B technology company's largest client, representing 28% of annual revenue, cancels their contract with 30 days notice. The CEO receives the call at 9am. The board expects a response by end of day. The team is already aware. The pressure to act immediately is intense.</p>
         </div>
         <div class="scen-pressure">
           <div class="sp-label">Pressure Conditions</div>
           <div class="sp-conditions">
-            <div class="sp-cond">Incomplete information — reason for cancellation unclear</div>
-            <div class="sp-cond">Time pressure — board response required within hours</div>
-            <div class="sp-cond">High stakes — 28% revenue exposure</div>
-            <div class="sp-cond">Team anxiety — reactive culture pressure building</div>
-            <div class="sp-cond">Ambiguity — is this isolated or systemic?</div>
+            <div class="sp-cond">Incomplete information, reason for cancellation unclear</div>
+            <div class="sp-cond">Time pressure, board response required within hours</div>
+            <div class="sp-cond">High stakes, 28% revenue exposure</div>
+            <div class="sp-cond">Team anxiety, reactive culture pressure building</div>
+            <div class="sp-cond">Ambiguity, is this isolated or systemic?</div>
           </div>
         </div>
       </div>
@@ -2312,7 +2430,7 @@ footer {
             <div class="ssr-tag">Pattern Interrupted</div>
           </div>
           <div class="ssr-right">
-            <p>The CEO's first impulse: call the client immediately, assemble an emergency response team, send a message to the board. <strong>Pause stops all of this.</strong> Instead: 10 minutes of deliberate stillness. Awareness Grid check — the CEO recognizes a Reactive-Rigid state: high stress, defensive thinking, narrowing options. <strong>The decision cycle cannot run from this state.</strong> The 10 minutes are used to regulate. When the state moves toward Reflective-Adaptive — aware, flexible, not defensive — the cycle continues.</p>
+            <p>The CEO's first impulse: call the client immediately, assemble an emergency response team, send a message to the board. Sound familiar? <strong>Pause stops all of this.</strong> Instead: 10 minutes of deliberate stillness. Awareness Grid check. The CEO recognizes a Reactive-Rigid state: high stress, defensive thinking, narrowing options. <strong>The cycle cannot run from this state.</strong> The 10 minutes are used to regulate. When the state moves toward Reflective-Adaptive, aware, flexible, not defensive, the cycle continues.</p>
           </div>
         </div>
         <div class="scen-step-row">
@@ -2324,7 +2442,7 @@ footer {
             <div class="ssr-tag">Signal Extracted</div>
           </div>
           <div class="ssr-right">
-            <p><strong>Confirmed facts:</strong> One client has cancelled. 30 days notice. No other clients have indicated concern. The reason given was "strategic reprioritization" — vague and unverifiable. <strong>Assumptions being generated by the stressed mind:</strong> Others will follow. The product has a problem. The board will lose confidence. Revenue crisis incoming. <strong>What is missing:</strong> The actual reason for cancellation. The health of other accounts. The board's actual reaction. <strong>The decision must operate on confirmed facts only.</strong> Everything else is noise — named, set aside, not acted upon.</p>
+            <p><strong>Confirmed facts:</strong> One client has cancelled. 30 days notice. No other clients have indicated concern. The reason given: "strategic reprioritization", vague and unverifiable. <strong>Assumptions being generated by the stressed mind in this moment:</strong> Others will follow. The product has a problem. The board will lose confidence. Revenue crisis incoming. <strong>What is missing:</strong> The actual reason for cancellation. The health of other accounts. The board's actual reaction to the news. <strong>The decision operates on confirmed facts only.</strong> Everything else is noise: named, set aside, not acted upon.</p>
           </div>
         </div>
         <div class="scen-step-row">
@@ -2336,7 +2454,7 @@ footer {
             <div class="ssr-tag">Decision Recalibrated</div>
           </div>
           <div class="ssr-right">
-            <p>Initial framing: "How do we recover this client?" Reframe interrogates this. <strong>Embedded assumption: recovery is possible and desirable.</strong> Testing the assumption: the cancellation reason is unclear. Recovery may not be the right objective. The Decision Grid maps the actual conditions: high inner clarity (the objective is business stability), low outer clarity (the situation is ambiguous). <strong>The reframed decision: assess the actual scope of risk before deciding on a response.</strong> This is a fundamentally different decision — and produces a fundamentally different outcome.</p>
+            <p>Initial framing: "How do we recover this client?" Reframe interrogates this immediately. <strong>Embedded assumption: recovery is possible and desirable.</strong> Testing the assumption: the cancellation reason is unclear. Recovery may not be the right objective. The Decision Grid maps your actual conditions: high inner clarity (the objective is business stability), low outer clarity (the situation is ambiguous). <strong>The reframed decision: assess your actual scope of risk before deciding on any response.</strong> This is a fundamentally different decision, and it produces a fundamentally different outcome.</p>
           </div>
         </div>
         <div class="scen-step-row">
@@ -2348,7 +2466,7 @@ footer {
             <div class="ssr-tag">Intent-Aligned</div>
           </div>
           <div class="ssr-right">
-            <p>The reframed decision executes with full intent alignment. <strong>Three specific actions, all connected to the objective (business stability):</strong> 1. A structured 30-minute call with the departing client to understand the actual reason — not to recover, but to gather intelligence. 2. Account health assessments for the top 10 clients — initiated within 24 hours. 3. Board communication drafted: transparent, calm, with a structured action plan rather than a defensive response. Culture Lattice check: <strong>is the team Reflective enough to execute this calmly?</strong> The CEO models the state — communicates with deliberate calm, not reactive urgency. The Lattice holds.</p>
+            <p>The reframed decision executes with full intent alignment. <strong>Three specific actions, all connected to the objective, which is business stability, not client recovery:</strong> 1. A structured 30-minute call with the departing client to understand the actual reason. Not to recover. To gather intelligence. 2. Account health assessments for the top 10 clients, initiated within 24 hours. 3. Board communication drafted: transparent, calm, with a structured action plan rather than a defensive response. Culture Lattice check: <strong>is your team Reflective enough to execute this calmly?</strong> The CEO models the state: deliberate calm, not reactive urgency. The Lattice holds.</p>
           </div>
         </div>
         <div class="scen-step-row">
@@ -2360,7 +2478,7 @@ footer {
             <div class="ssr-tag">Intelligence Captured</div>
           </div>
           <div class="ssr-right">
-            <p><strong>What did it produce?</strong> The client call revealed the actual reason: a competitor had offered an integrated solution that the company did not have. Not a quality or relationship issue — a product gap. Account reviews identified two other accounts with similar needs. <strong>What did it reveal?</strong> No account health monitoring existed. The company had been operating without a systematic view of client risk. The cancellation was not a random event — it was a predictable outcome of an absent system. <strong>What does this change?</strong> Product roadmap conversation becomes urgent. Account monitoring becomes structural.</p>
+            <p><strong>What did it produce?</strong> The client call revealed the actual reason: a competitor had offered an integrated solution that was not on the company roadmap. Not a quality or relationship issue, a product gap. Account reviews identified two other accounts with similar needs. <strong>What did it reveal?</strong> No account health monitoring existed. The company had been operating without a systematic view of client risk. The cancellation was not a random event, it was a predictable outcome of an absent system. <strong>What does this change?</strong> Product roadmap conversation becomes urgent. Account monitoring becomes a structural requirement.</p>
           </div>
         </div>
         <div class="scen-step-row">
@@ -2372,14 +2490,14 @@ footer {
             <div class="ssr-tag">System Updated</div>
           </div>
           <div class="ssr-right">
-            <p>Three Grow outputs become three system changes: <strong>1.</strong> Quarterly account health review protocol — implemented within 30 days, assigned, documented, non-negotiable. <strong>2.</strong> Product gap analysis — initiated as a structured process, not a reactive conversation. <strong>3.</strong> Board communication protocol updated — proactive transparency replaces reactive damage control as the standard. <strong>The next Pause begins from a different system.</strong> When the next pressure event occurs, the company will catch it at account health review — not at cancellation. The cycle produced not just a decision, but a structurally improved organization.</p>
+            <p>Three Grow outputs become three system changes: <strong>1.</strong> Quarterly account health review protocol: implemented within 30 days, assigned, documented, non-negotiable. <strong>2.</strong> Product gap analysis: initiated as a structured process, not a reactive conversation. <strong>3.</strong> Board communication protocol updated: proactive transparency replaces reactive damage control as the standard. <strong>Your next Pause, whenever it comes, begins from a different system.</strong> When the next pressure event occurs, it will be caught at account health review, not at cancellation. The cycle produced not just a decision, but a structurally improved organization.</p>
           </div>
         </div>
       </div>
 
       <div class="scen-outcome">
         <div class="so-label">System Outcome</div>
-        <p class="so-text"><strong>What a reactive response would have produced:</strong> Emergency client recovery effort, defensive board communication, and no systemic change — leaving the company vulnerable to the same event repeating. <strong>What RAL produced:</strong> Accurate diagnosis of the actual problem, proactive account protection, product roadmap alignment, and a structural system change that prevents the next version of the same crisis. The cycle ran in approximately 90 minutes from trigger to initial execution. The structural changes it produced took three weeks to implement. The next client cancellation never happened — because the system now caught the signals before they reached that point.</p>
+        <p class="so-text"><strong>What a reactive response would have produced:</strong> Emergency client recovery effort, defensive board communication, and no systemic change, leaving the company vulnerable to the same event repeating. <strong>What RAL produced:</strong> Accurate diagnosis of the actual problem, proactive account protection, product roadmap alignment, and a structural system change that prevents the next version of this exact crisis. The cycle ran in approximately 90 minutes from trigger to initial execution. The structural changes it produced took three weeks to implement. The next client cancellation never happened, because the system now caught the signals before they reached that point.</p>
       </div>
     </div>
   </div>
@@ -2390,10 +2508,10 @@ footer {
   <div class="apply-inner">
     <div class="apply-header">
       <div class="section-eyebrow reveal">Where RAL Operates</div>
-      <h2 class="section-h2 reveal r-d1">One engine.<br><em>Every decision environment.</em></h2>
-      <p class="section-body reveal r-d2">The decision problems RAL solves — reactive patterns, ambiguity, incomplete information, pressure, misalignment — are not unique to any domain. They exist wherever decisions carry consequence. RAL was designed to be domain-agnostic in structure and domain-precise in application.</p>
+      <h2 class="section-h2 reveal r-d1">One engine.<br><em>Every decision environment you operate in.</em></h2>
+      <p class="section-body reveal r-d2">The decision problems RAL solves, reactive patterns, ambiguity, incomplete information, pressure, and misalignment, are not unique to any domain. They are the conditions you face wherever decisions carry consequence. RAL was designed to be domain-agnostic in structure and domain-precise in application.</p>
       <div class="quote-block" style="background:rgba(0,212,170,0.04);border-left-color:var(--teal);margin-top:16px;">
-        <p style="color:var(--white);">Real-world use-cases include rapid market pivoting, high-stakes crisis decisions, executive strategic planning, operations under uncertainty, cross-functional tradeoff management, and personal high-impact life choices. RAL is the engine that translates pressure into clarity across the full decision spectrum.</p>
+        <p style="color:var(--white);">Whether you are navigating a market crisis, commanding an operation, leading an organization through change, or facing a significant personal decision, the conditions are the same. RAL is the engine that translates pressure into clarity across the full decision spectrum.</p>
       </div>
     </div>
 
@@ -2404,130 +2522,130 @@ footer {
       <button class="domain-tab" onclick="switchDomain('personal',this)">Personal Decisions</button>
     </div>
 
-    <div id="domain-business" class="domain-panel active" style="background: url('assets/domain-business-bg.jpg') center/cover no-repeat, var(--surface-2);">
+    <div id="domain-business" class="domain-panel active">
       <div class="dp-text">
         <h3>Business Decision-Making</h3>
-        <p>Business environments combine time pressure, incomplete market information, organizational complexity, and high-stakes consequences — the exact conditions RAL was engineered for. Every stage of the cycle addresses a specific failure mode common in business decisions.</p>
+        <p>Your business environment combines time pressure, incomplete market information, organizational complexity, and high-stakes consequences. Those are exactly the conditions RAL was engineered for. Every stage of the cycle addresses a specific failure mode you likely recognize.</p>
         <div class="dp-problems">
           <div class="dp-problems-label">Common Decision Failures Without RAL</div>
-          <div class="dp-problem">Reactive decisions made in the first hour of a crisis become irreversible commitments</div>
-          <div class="dp-problem">Assumptions about market or customer behavior treated as confirmed facts</div>
-          <div class="dp-problem">Strategic drift — actions accumulate without alignment to objective</div>
-          <div class="dp-problem">No systematic learning from outcomes — same quality of decisions indefinitely</div>
+          <div class="dp-problem">Your reactive decisions made in the first hour of a crisis become irreversible commitments</div>
+          <div class="dp-problem">Assumptions about your market or customer behavior treated as confirmed facts</div>
+          <div class="dp-problem">Strategic drift: your actions accumulate without alignment to your objective</div>
+          <div class="dp-problem">No systematic learning from outcomes: the same quality of decisions indefinitely</div>
         </div>
         <div class="dp-outcomes">
           <div class="dp-outcomes-label">What RAL Produces in Business</div>
-          <div class="dp-outcome">Decisions that address actual problems — not reactive interpretations of them</div>
-          <div class="dp-outcome">Faster decisions with higher quality — not a trade-off, a compounding advantage</div>
-          <div class="dp-outcome">Organizational culture that carries decisions into execution without distortion</div>
-          <div class="dp-outcome">Compounding decision quality — each cycle improves the next</div>
+          <div class="dp-outcome">Decisions that address your actual problems, not reactive interpretations of them</div>
+          <div class="dp-outcome">Faster decisions with higher quality: not a trade-off, a compounding advantage for you</div>
+          <div class="dp-outcome">An organizational culture that carries your decisions into execution without distortion</div>
+          <div class="dp-outcome">Compounding decision quality: each of your cycles improves the next</div>
         </div>
       </div>
       <div class="dp-visual">
-        <div class="dp-visual-label">RAL Cycle — Applied to Business</div>
+        <div class="dp-visual-label">RAL Cycle, Applied to Business</div>
         <div class="dp-cycle-map">
-          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text">Stop the reactive impulse to respond immediately to market pressure, competitive threat, or internal crisis. <strong>The first decision in any business pressure event is whether to act immediately or to regulate first.</strong></div></div>
-          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">Separate confirmed market data from assumptions, projections, and fear-driven narratives. <strong>What do we actually know? What are we constructing from partial information?</strong></div></div>
-          <div class="dcm-row"><div class="dcm-stage">Reframe</div><div class="dcm-text">Interrogate the problem definition before designing solutions. <strong>Most business failures solve the wrong problem at the right time.</strong> Reframe ensures the right problem is identified first.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Act</div><div class="dcm-text">Execute with explicit connection between each action and the strategic objective. <strong>The Culture Lattice must be Reflective for execution to carry without distortion.</strong></div></div>
-          <div class="dcm-row"><div class="dcm-stage">Grow</div><div class="dcm-text">Capture what the decision produced and what it revealed. <strong>This is the data that prevents the next version of the same problem.</strong></div></div>
-          <div class="dcm-row"><div class="dcm-stage">Adjust</div><div class="dcm-text">Convert outcome intelligence into structural system changes. <strong>Not lessons learned — system changes. The next decision starts from a higher baseline.</strong></div></div>
+          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text">Stop your reactive impulse to respond immediately to market pressure, competitive threat, or internal crisis. <strong>The first decision in any business pressure event you face is whether to act immediately or to regulate first.</strong></div></div>
+          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">Separate your confirmed market data from assumptions, projections, and fear-driven narratives. <strong>What do you actually know? What are you constructing from partial information?</strong></div></div>
+          <div class="dcm-row"><div class="dcm-stage">Reframe</div><div class="dcm-text">Interrogate your problem definition before designing solutions. <strong>Most business failures solve the wrong problem at the right time.</strong> Reframe ensures your right problem is identified first.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Act</div><div class="dcm-text">Execute with explicit connection between each of your actions and your strategic objective. <strong>Your Culture Lattice must be Reflective for your execution to carry without distortion.</strong></div></div>
+          <div class="dcm-row"><div class="dcm-stage">Grow</div><div class="dcm-text">Capture what your decision produced and what it revealed. <strong>This is the data that prevents the next version of your same problem.</strong></div></div>
+          <div class="dcm-row"><div class="dcm-stage">Adjust</div><div class="dcm-text">Convert your outcome intelligence into structural system changes. <strong>Not lessons learned. System changes. Your next decision starts from a higher baseline.</strong></div></div>
         </div>
       </div>
     </div>
 
-    <div id="domain-leadership" class="domain-panel" style="background: url('assets/domain-leadership-bg.jpg') center/cover no-repeat, var(--surface-2);">
+    <div id="domain-leadership" class="domain-panel">
       <div class="dp-text">
         <h3>Leadership Under Pressure</h3>
-        <p>Leadership decisions carry a multiplying effect — one poorly-made decision at leadership level distorts execution across entire organizations. RAL is specifically designed for the conditions leadership faces: incomplete information, time pressure, and the constant pull of reactive pattern execution.</p>
+        <p>Your decisions as a leader carry a multiplying effect. One poorly-made decision at your level distorts execution across your entire organization. RAL is specifically designed for the conditions you face: incomplete information, time pressure, and the constant pull of reactive pattern execution.</p>
         <div class="dp-problems">
           <div class="dp-problems-label">Common Leadership Decision Failures</div>
-          <div class="dp-problem">Reactive leadership state — decisions made from stress rather than clarity</div>
-          <div class="dp-problem">Over-control — increasing control as a substitute for structured decision-making</div>
-          <div class="dp-problem">Misalignment between leadership decisions and organizational execution</div>
-          <div class="dp-problem">No feedback loop — decisions made, outcomes not systematically captured</div>
+          <div class="dp-problem">Reactive leadership state: your decisions made from stress rather than clarity</div>
+          <div class="dp-problem">Over-control: increasing control as a substitute for structured decision-making</div>
+          <div class="dp-problem">Misalignment between your leadership decisions and your organizational execution</div>
+          <div class="dp-problem">No feedback loop: decisions made, outcomes not systematically captured</div>
         </div>
         <div class="dp-outcomes">
           <div class="dp-outcomes-label">What RAL Produces in Leadership</div>
-          <div class="dp-outcome">Decisions made from Reflective-Adaptive state — not reactive stress</div>
-          <div class="dp-outcome">Organizational alignment between leadership intent and team execution</div>
-          <div class="dp-outcome">Culture Lattice awareness — leaders who build Reflective cultures, not reactive ones</div>
-          <div class="dp-outcome">Progressive improvement — leadership decisions that compound in quality over time</div>
+          <div class="dp-outcome">Your decisions made from Reflective-Adaptive state, not reactive stress</div>
+          <div class="dp-outcome">Organizational alignment between your leadership intent and your team execution</div>
+          <div class="dp-outcome">Culture Lattice awareness: you build a Reflective culture, not a reactive one</div>
+          <div class="dp-outcome">Progressive improvement: your leadership decisions compounding in quality over time</div>
         </div>
       </div>
       <div class="dp-visual">
         <div class="dp-visual-label">Leadership Application</div>
         <div class="dp-cycle-map">
-          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text">The most undervalued leadership behavior. <strong>A leader who Pauses before responding under pressure changes the entire organizational response pattern</strong> — teams mirror the state of their leader.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">Leaders receive filtered information. <strong>Perceive at leadership level means actively interrogating what is being reported versus what is actually happening</strong> — two often very different things.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Reframe</div><div class="dcm-text">The most common leadership error: solving the symptom, not the system. <strong>Reframe at leadership level asks: what organizational condition is producing this situation, and what decision addresses that condition?</strong></div></div>
-          <div class="dcm-row"><div class="dcm-stage">Act</div><div class="dcm-text"><strong>Leadership action must be visible, clear, and aligned.</strong> The Culture Lattice is leadership's responsibility — the state of the organizational environment is a leadership decision, not an organizational inevitability.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Grow + Adjust</div><div class="dcm-text"><strong>Leaders who model Grow and Adjust create learning organizations.</strong> Those who skip it create organizations that repeat the same quality of performance indefinitely — regardless of talent or resources.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text">The most undervalued behavior in your leadership. <strong>When you Pause before responding under pressure, you change your entire organizational response pattern</strong> : your team mirrors your state.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">You receive filtered information. <strong>Perceive at your leadership level means actively interrogating what is being reported versus what is actually happening</strong> : often two very different things.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Reframe</div><div class="dcm-text">The most common error at your level: solving the symptom, not the system. <strong>Reframe at your level asks: what organizational condition is producing this situation, and what decision addresses that condition, not just the symptom?</strong></div></div>
+          <div class="dcm-row"><div class="dcm-stage">Act</div><div class="dcm-text"><strong>Your action must be visible, clear, and aligned.</strong> The Culture Lattice is your responsibility. The state of your organizational environment is your decision, not an organizational inevitability.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Grow + Adjust</div><div class="dcm-text"><strong>When you model Grow and Adjust, you create a learning organization.</strong> When you skip it, your organization repeats the same quality of performance indefinitely, regardless of the talent or resources around you.</div></div>
         </div>
       </div>
     </div>
 
-    <div id="domain-crisis" class="domain-panel" style="background: url('assets/domain-crisis-bg.jpg') center/cover no-repeat, var(--surface-2);">
+    <div id="domain-crisis" class="domain-panel">
       <div class="dp-text">
         <h3>Crisis Response</h3>
-        <p>Crisis environments are the extreme version of the conditions RAL was built for: maximum pressure, minimum information, zero tolerance for error, and the strongest pull toward reactive execution. This is where the absence of a decision system produces the most damage.</p>
+        <p>A crisis is the extreme version of every condition RAL was built for: maximum pressure, minimum information, zero tolerance for error, and the strongest pull toward reactive execution. This is where the absence of your decision system produces the most damage.</p>
         <div class="dp-problems">
           <div class="dp-problems-label">Crisis Decision Failures</div>
-          <div class="dp-problem">Reactive decisions made in the first minutes define the entire crisis trajectory</div>
-          <div class="dp-problem">Confirmation bias — seeking information that confirms the initial reactive interpretation</div>
-          <div class="dp-problem">Speed-accuracy trade-off — acting fast at the cost of acting correctly</div>
-          <div class="dp-problem">No structured learning — crisis experience does not transfer to improved future response</div>
+          <div class="dp-problem">Your reactive decisions made in the first minutes define your entire crisis trajectory</div>
+          <div class="dp-problem">Confirmation bias: seeking information that confirms your initial reactive interpretation</div>
+          <div class="dp-problem">Speed-accuracy trade-off: acting fast at the cost of acting correctly</div>
+          <div class="dp-problem">No structured learning: your crisis experience does not transfer to improved future response</div>
         </div>
         <div class="dp-outcomes">
           <div class="dp-outcomes-label">What RAL Produces in Crisis</div>
-          <div class="dp-outcome">Deliberate response from the first moment — not reactive execution</div>
-          <div class="dp-outcome">Accurate situation assessment before any action is taken</div>
-          <div class="dp-outcome">Actions aligned to the actual problem, not the reactive interpretation of it</div>
-          <div class="dp-outcome">Structured post-crisis learning that improves the next response</div>
+          <div class="dp-outcome">Deliberate response from your first moment, not reactive execution</div>
+          <div class="dp-outcome">Accurate situation assessment before you take any action</div>
+          <div class="dp-outcome">Your actions aligned to the actual problem, not your reactive interpretation of it</div>
+          <div class="dp-outcome">Structured post-crisis learning that improves your next response</div>
         </div>
       </div>
       <div class="dp-visual">
         <div class="dp-visual-label">Crisis Cycle Application</div>
         <div class="dp-cycle-map">
-          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text"><strong>The most critical 60 seconds in any crisis.</strong> The reactive pattern executes fastest under maximum pressure. Pause in a crisis is not inaction — it is the decision to decide rather than react. This single step changes crisis outcomes.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">Crisis information is maximally unreliable. <strong>Separate what is confirmed from what is emerging, rumored, or feared.</strong> Act only on confirmed facts. Name everything else explicitly as unconfirmed.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Reframe + Act</div><div class="dcm-text"><strong>Speed with accuracy.</strong> RAL enables faster decisions under crisis conditions because the process removes the cognitive overhead of reactive uncertainty. Reframe identifies the actual problem; Act executes with alignment.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Grow + Adjust</div><div class="dcm-text"><strong>Crisis intelligence is the most valuable organizational data available.</strong> Grow and Adjust convert crisis experience into structural improvements — so that the next crisis is met by a more capable system, not an organization starting from zero.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text"><strong>The most critical 60 seconds in your crisis.</strong> Your reactive pattern executes fastest under maximum pressure. Pause in a crisis is not inaction. It is your decision to respond deliberately rather than react automatically. This single step changes your crisis outcomes.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">Crisis information is maximally unreliable. <strong>Separate what is confirmed from what is emerging, rumored, or feared in your situation.</strong> Act only on your confirmed facts. Name everything else explicitly as unconfirmed.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Reframe + Act</div><div class="dcm-text"><strong>Speed with accuracy.</strong> RAL enables you to decide faster under crisis conditions because the process removes the cognitive overhead of reactive uncertainty. Reframe identifies the actual problem; Act executes with alignment.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Grow + Adjust</div><div class="dcm-text"><strong>Crisis intelligence is the most valuable organizational data you will ever have.</strong> Grow and Adjust convert your crisis experience into structural improvements, so your next crisis is met by a more capable system, not an organization starting from zero.</div></div>
         </div>
       </div>
     </div>
 
-    <div id="domain-personal" class="domain-panel" style="background: url('assets/domain-personal-bg.jpg') center/cover no-repeat, var(--surface-2);">
+    <div id="domain-personal" class="domain-panel">
       <div class="dp-text">
         <h3>Personal Decision-Making</h3>
-        <p>The conditions that make decisions difficult — ambiguity, pressure, incomplete information, emotional activation — are most intensely present in personal decisions. Career choices, relationship decisions, financial commitments under uncertainty. RAL was designed for these conditions.</p>
+        <p>The conditions that make decisions difficult, ambiguity, pressure, incomplete information, emotional activation, are most intensely present in your personal decisions. Career choices, relationship decisions, financial commitments under uncertainty. RAL was designed specifically for these conditions.</p>
         <div class="dp-problems">
           <div class="dp-problems-label">Personal Decision Failures</div>
-          <div class="dp-problem">Emotional state drives the decision — not the quality of thinking</div>
-          <div class="dp-problem">Assumptions about outcomes treated as known facts</div>
-          <div class="dp-problem">Solving the wrong problem — addressing symptoms rather than the actual situation</div>
-          <div class="dp-problem">No learning integration — the same decision quality repeated indefinitely</div>
+          <div class="dp-problem">Your emotional state drives the decision, not the quality of your thinking</div>
+          <div class="dp-problem">Your assumptions about outcomes treated as known facts</div>
+          <div class="dp-problem">Solving the wrong problem: addressing symptoms rather than your actual situation</div>
+          <div class="dp-problem">No learning integration: the same decision quality repeated indefinitely</div>
         </div>
         <div class="dp-outcomes">
           <div class="dp-outcomes-label">What RAL Produces Personally</div>
-          <div class="dp-outcome">Decisions made from clarity — not from the emotional state the situation created</div>
-          <div class="dp-outcome">Accurate assessment of the actual situation before any commitment is made</div>
-          <div class="dp-outcome">Progressive improvement in personal decision quality over time</div>
-          <div class="dp-outcome">Reduced regret — decisions that were deliberately made rather than reactively executed</div>
+          <div class="dp-outcome">Your decisions made from clarity, not from the emotional state the situation created in you</div>
+          <div class="dp-outcome">Accurate assessment of your actual situation before any commitment is made</div>
+          <div class="dp-outcome">Progressive improvement in your personal decision quality over time</div>
+          <div class="dp-outcome">Reduced regret: your decisions deliberately made rather than reactively executed</div>
         </div>
       </div>
       <div class="dp-visual">
         <div class="dp-visual-label">Personal Application</div>
         <div class="dp-cycle-map">
-          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text"><strong>Personal decisions made under emotional activation are the most likely to be regretted.</strong> Pause is the recognition that the emotional state is not the decision-making state. Regulate first.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">Personal Perceive: <strong>what do I actually know about this situation versus what am I constructing from fear, hope, or assumption?</strong> Three columns. Everything in column two gets named and set aside.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Reframe</div><div class="dcm-text"><strong>Most personal decisions are framed incorrectly.</strong> "Should I take this job?" may actually be: "What do I need from my work, and does this opportunity provide it?" Reframe finds the real question.</div></div>
-          <div class="dcm-row"><div class="dcm-stage">Act + Grow + Adjust</div><div class="dcm-text"><strong>Personal Adjust is the most powerful self-development tool available.</strong> Converting the intelligence from every significant personal decision into a structural change in how the next decision is approached produces compounding clarity over a lifetime.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Pause</div><div class="dcm-text"><strong>Decisions you make under emotional activation are the most likely to be regretted.</strong> Pause is the recognition that your emotional state right now is not your decision-making state. Regulate first.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Perceive</div><div class="dcm-text">Your Perceive: <strong>what do I actually know about this situation versus what am I constructing from fear, hope, or assumption?</strong> Three columns. Everything in column two gets named and set aside before you proceed.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Reframe</div><div class="dcm-text"><strong>Most personal decisions you face are framed incorrectly.</strong> "Should I take this job?" may actually be: "What do I need from my work, and does this opportunity provide it?" Reframe finds the question you actually need to answer.</div></div>
+          <div class="dcm-row"><div class="dcm-stage">Act + Grow + Adjust</div><div class="dcm-text"><strong>Your Adjust is the most powerful self-development tool you have.</strong> Converting the intelligence from every significant personal decision into a structural change in how you approach your next one produces compounding clarity over a lifetime.</div></div>
         </div>
       </div>
     </div>
     <div style="margin-top:56px;text-align:center;">
-      <p class="section-body" style="max-width:800px;margin:0 auto 16px;color:var(--white);">After seeing RAL applied across domains, the next step is to define the scope for your own context. Make this a structured conversation: your current decision challenge, desired outcomes, and the impact window you are targeting.</p>
+      <p class="section-body" style="max-width:800px;margin:0 auto 16px;color:var(--white);">You have seen how RAL applies across every domain. The next step is to define how it applies in your specific context. Make that a structured conversation: your current decision challenge, desired outcomes, and the impact window you are targeting.</p>
       <button class="btn-primary" onclick="goto('s-engage')">Define your decision objective with Vedant →</button>
     </div>
   </div>
@@ -2540,7 +2658,7 @@ footer {
       <div class="about-portrait">
         <div class="ap-corner-bl"></div>
         <div class="ap-corner-br"></div>
-        <img src="assets/vedant-action.jpg" alt="Vedant R Krishna" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+        <img src="assets/vedant.jpg" alt="Vedant R Krishna" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
       </div>
       <div class="about-meta">
         <div class="am-row"><span class="am-key">Name</span><span class="am-val">Vedant</span></div>
@@ -2553,17 +2671,17 @@ footer {
     <div class="about-content">
       <div class="section-eyebrow reveal">About</div>
       <h2 class="section-h2 reveal r-d1">Vedant</h2>
-      <p class="about-bio reveal r-d2">RAL was not designed in a research environment. It was observed — in operational environments where decisions carried immediate, irreversible consequence, where standard frameworks consistently failed under the pressure they were supposedly designed for, and where the gap between trained decision-making and <strong>actual decision-making under pressure became undeniable.</strong></p>
-      <p class="about-bio reveal r-d3">With over 21 years of operational and strategic experience in the Indian Army — across command roles, logistics operations, and multi-domain environments — Vedant developed RAL not as an academic framework but as a working system. <strong>Every component was tested against real conditions before it was named.</strong></p>
+      <p class="about-bio reveal r-d2">RAL was not designed in a research environment. It was observed in operational environments where decisions carried immediate, irreversible consequence, where standard frameworks consistently failed under the pressure they were supposedly designed for, and where the gap between trained decision-making and <strong>actual decision-making under pressure became undeniable.</strong></p>
+      <p class="about-bio reveal r-d3">With over 21 years of operational and strategic experience in the Indian Army, across command roles, logistics operations, and multi-domain environments, the framework emerged from what was actually observed under real conditions, not theorized in research. <strong>Every component was tested against real conditions before it was named.</strong></p>
       <div class="about-pull reveal r-d3">
-        <p>"The system belongs to the conditions that demanded it — and to every person who has had to make a decision without enough time, enough information, or enough certainty."</p>
+        <p>"This system belongs to the conditions that demanded it, and to every person who has had to make a decision without enough time, enough information, or enough certainty."</p>
       </div>
-      <p class="about-bio reveal r-d4">Today RAL is applied across defence, business, leadership, and personal decision environments — not as a leadership philosophy, but as a working decision operating system. The goal is simple: <strong>better decisions, under harder conditions, consistently.</strong></p>
+      <p class="about-bio reveal r-d4">Today RAL is applied across defence, business, leadership, and personal decision environments, not as a leadership philosophy, but as a decision system built for you. The goal is simple: <strong>better decisions, under harder conditions, consistently.</strong></p>
       <div class="creds-grid reveal r-d4">
         <div class="cred"><div class="cred-t">Operational Background</div><p>Command and field experience across multiple operational environments with the Indian Army over two decades.</p></div>
         <div class="cred"><div class="cred-t">Strategic Expertise</div><p>Multi-domain operations, logistics strategy, and decision-making at formation and command level under real pressure.</p></div>
-        <div class="cred"><div class="cred-t">System Creator</div><p>Originator of the RAL system — built from observed operational reality, not theoretical research.</p></div>
-        <div class="cred"><div class="cred-t">Applied Reach</div><p>Active application of RAL across defence, corporate, and personal decision environments globally.</p></div>
+        <div class="cred"><div class="cred-t">System Creator</div><p>Originator of the RAL system: built from observed operational reality, not theoretical research.</p></div>
+        <div class="cred"><div class="cred-t">Applied Reach</div><p>Active application of RAL across defence, corporate, and personal decision environments.</p></div>
       </div>
     </div>
   </div>
@@ -2574,14 +2692,14 @@ footer {
   <div class="engage-inner">
     <div class="engage-tag reveal">Enquiry System</div>
     <h2 class="engage-h reveal r-d1">
-      From understanding to action.<br><em>Begin structured executive engagement.</em>
+      From understanding to your next decision.<br><em>Begin your structured engagement.</em>
     </h2>
-    <p class="engage-body reveal r-d2">This is a structured engagement pathway for seasoned decision-makers. Capture the decision context that matters, frame the strategic outcome you need, and begin a guided conversation with Vedant R Krishna. The form is the main intake for meaningful outcomes; direct professional contact is provided for secondary credibility and connection.</p>
+    <p class="engage-body reveal r-d2">This is a structured engagement pathway built for serious decision-makers. Capture the decision context that matters to you, frame the strategic outcome you need, and begin a guided conversation with Vedant R Krishna. The form is the main intake for meaningful outcomes; direct professional contact is provided for secondary credibility and connection.</p>
 
     <div class="engage-form-grid reveal r-d3">
       <div class="engage-form-panel">
         <h3>Professional inquiry process</h3>
-        <p>High-intent engagement begins with clarity. Fill the two-step form with specific detail so the first conversation can be directly operational.</p>
+        <p>High-intent engagement begins with your clarity. Fill the form with specific detail so the first conversation is immediately useful to you.</p>
 
         <div class="inquiry-step-indicator">
           <span class="inquiry-step active" id="step-indicator-1">1. Your role</span>
@@ -2590,7 +2708,12 @@ footer {
 
         <p class="field-help">Required fields are marked with *</p>
 
-        <form id="inquiry-form" onsubmit="submitInquiry(event)">
+        <form id="inquiry-form" name="inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="submitInquiry(event)">
+          <input type="hidden" name="form-name" value="inquiry" />
+          <div class="field-group" style="display:none;">
+            <label>Don’t fill this out if you’re human</label>
+            <input name="bot-field" />
+          </div>
           <div class="form-step active" data-step="1">
             <div class="field-group">
               <label for="fullName">Full Name *</label>
@@ -2654,7 +2777,7 @@ footer {
       <div>
         <div class="engage-form-panel" style="background:rgba(0,44,64,0.6);">
           <h3>Direct professional contacts</h3>
-          <p>This form is the primary structured intake. Alternate trusted contact methods are provided here for credibility and ease of connection.</p>
+          <p>This form is the primary structured intake. Alternate contact methods are provided below.</p>
 
           <div class="engage-contacts">
             <div class="engage-contact-card" style="display:flex;align-items:center;gap:12px;">
@@ -2671,7 +2794,7 @@ footer {
             </div>
             <div class="engage-contact-card">
               <div class="ec-label">Professional email</div>
-              <a class="ec-val" href="mailto:contact@raldecision.com">contact@raldecision.com</a>
+              <a class="ec-val" href="mailto:ramakrrishna1161@gmail.com">email Vedant</a>
             </div>
             <div class="engage-contact-card">
               <div class="ec-label">System focus</div>
@@ -2679,11 +2802,65 @@ footer {
             </div>
           </div>
 
-          <p style="margin-top:16px; font-size:13px; color:var(--white-muted);">Intended for leaders who treat decisions as strategic leverage. This intake is built to capture the specific situation, the desired impact, and the constraints so Vedant can prepare an operational next step.</p>
+          <p style="margin-top:16px; font-size:13px; color:var(--white-muted);">Built for leaders who treat decisions as strategic leverage. This intake captures your specific situation, desired impact, and constraints so Vedant can prepare an operational next step.</p>
         </div>
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- ════════ VISUAL SUMMARY ════════ -->
+<section id="s-summary" style="padding: 96px 48px; background: var(--black); border-top: 1px solid var(--border);">
+  <div style="max-width: 1280px; margin: 0 auto;">
+    <div style="text-align: center; margin-bottom: 64px;">
+      <div class="section-eyebrow reveal" style="margin-bottom: 16px;">System Identity</div>
+      <div style="width: 64px; height: 64px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+        <img src="assets/ral-logo.png" alt="RAL Logo" style="width: 48px; height: 48px; object-fit: contain;">
+      </div>
+      <h2 class="section-h2 reveal r-d1" style="margin-top: 24px;">RAL Decision System</h2>
+      <p class="section-body reveal r-d2" style="margin-top: 12px; max-width: 600px; margin-left: auto; margin-right: auto;">A real-time decision architecture for high-pressure environments where reactive thinking breaks systems and reflective clarity wins outcomes.</p>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 64px;">
+      <div class="reveal r-d1" style="padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; text-align: center;">
+        <div style="width: 100%; height: 200px; background: rgba(0,212,170,0.05); border: 1px solid var(--border); border-radius: 3px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <img src="assets/system-architecture.png" alt="RAL System Architecture" style="width: 90%; height: 90%; object-fit: contain; opacity: 0.9;">
+        </div>
+        <div style="font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--teal); text-transform: uppercase; margin-bottom: 8px;">Core Framework</div>
+        <h3 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px;">Integrated Architecture</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.6;">Awareness Grid, Decision Grid, Culture Lattice—three integrated layers supporting six decision stages.</p>
+      </div>
+
+      <div class="reveal r-d2" style="padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; text-align: center;">
+        <div style="width: 100%; height: 200px; background: rgba(0,212,170,0.05); border: 1px solid var(--border); border-radius: 3px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden;">
+          <img src="assets/vedant.jpg" alt="System Architect" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+        </div>
+        <div style="font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--teal); text-transform: uppercase; margin-bottom: 8px;">Creator</div>
+        <h3 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px;">Vedant R Krishna</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.6;">Decision architect and systems designer specializing in high-pressure organizational environments.</p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+      <div class="reveal r-d3" style="padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; text-align: center;">
+        <div style="width: 100%; height: 180px; background: rgba(0,212,170,0.05); border: 1px solid var(--border); border-radius: 3px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; overflow: hidden;">
+          <img src="assets/og-image.png" alt="RAL OG Image" style="width: 100%; height: 100%; object-fit: contain; opacity: 0.9;">
+        </div>
+        <div style="font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--teal); text-transform: uppercase; margin-bottom: 8px;">Overview</div>
+        <h3 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px;">Complete System Overview</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.6;">Full system documentation and visual reference for implementation.</p>
+      </div>
+
+      <div class="reveal r-d4" style="padding: 32px; background: var(--surface); border: 1px solid var(--border); border-radius: 4px; text-align: center;">
+        <div style="width: 100%; height: 180px; background: rgba(0,212,170,0.05); border: 1px solid var(--border); border-radius: 3px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <img src="assets/ral-logo-sm.png" alt="RAL Logo Compact" style="width: 70%; height: 70%; object-fit: contain; opacity: 0.9;">
+        </div>
+        <div style="font-family: var(--mono); font-size: 11px; font-weight: 500; color: var(--teal); text-transform: uppercase; margin-bottom: 8px;">Branding</div>
+        <h3 style="font-family: var(--sans); font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 8px;">Compact Variant</h3>
+        <p style="font-size: 13px; color: var(--white-dim); line-height: 1.6;">System identifier for integration and compact display across applications.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -2861,15 +3038,25 @@ function submitInquiry(event) {
 
   console.log('RAL inquiry captured:', payload);
 
-  document.getElementById('inquiry-message').style.color = '#00F0C0';
-  document.getElementById('inquiry-message').textContent = 'Your inquiry has been captured. Vedant will review and respond within 48 hours. Thank you.';
+  const form = document.getElementById('inquiry-form');
+  const netlifyData = new FormData(form);
 
-  document.getElementById('inquiry-form').reset();
-  currentFormStep = 1;
-  showFormStep(currentFormStep);
-
-  // In a production implementation, this is where a backend API call would occur.
+  fetch('/', { method: 'POST', body: netlifyData })
+    .then(response => {
+      if (!response.ok) throw new Error('Submission failed');
+      document.getElementById('inquiry-message').style.color = '#00F0C0';
+      document.getElementById('inquiry-message').textContent = 'Your inquiry has been sent. Vedant will review and respond within 48 hours. Thank you.';
+      document.getElementById('inquiry-form').reset();
+      currentFormStep = 1;
+      showFormStep(currentFormStep);
+    })
+    .catch(error => {
+      console.error('Netlify form submit error:', error);
+      document.getElementById('inquiry-message').style.color = '#FC9673';
+      document.getElementById('inquiry-message').textContent = 'There was an issue submitting the form. Please try again or email contact@raldecision.com.';
+    });
 }
+
 
 const serviceIntentSelect = document.getElementById('serviceIntent');
 if (serviceIntentSelect) {
